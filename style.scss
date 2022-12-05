@@ -224,11 +224,15 @@ iframe {
   border: none;
 }
 
+.catchphrase {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
-  header {
-    display: flex;
-    justify-content: center;
-  }
+header {
+  display: flex;
+  justify-content: center;
+}
 
   header nav {
     display: block;
@@ -259,8 +263,9 @@ iframe {
   .linkFooter {
     display: flex;
     flex-direction: row;
-    font-size: 25px;
-    width: 700px;
+    font-size: 22px;
+    width: 630px;
     justify-content: space-between
   }
+
 }
