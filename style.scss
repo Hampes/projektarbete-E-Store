@@ -197,7 +197,7 @@ iframe {
   margin: 20px
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) {}
 header {
   display: flex;
   justify-content: center;
@@ -229,5 +229,3 @@ header {
     width: 500px;
     height: 500px;
   }
-
-}
