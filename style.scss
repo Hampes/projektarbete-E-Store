@@ -24,7 +24,6 @@ h3 {
 }
 
 .mobileStart {
-  
 }
 
 .logo {
@@ -71,7 +70,6 @@ ul li:hover {
 }
 
 #hamburger-icon {
-  
   margin: auto 0;
   display: none;
   cursor: pointer;
@@ -122,7 +120,6 @@ ul li:hover {
 
 header nav {
   display: none;
-  
 }
 
 #hamburger-icon {
@@ -134,19 +131,19 @@ header nav {
 }
 
 .product {
-    @include highlight();
+  @include highlight();
 }
 
 .references {
-    @include highlight();
+  @include highlight();
 }
 
 .about {
-    @include highlight();
+  @include highlight();
 }
 
 .contact {
-    @include highlight();
+  @include highlight();
 }
 
 h2 {
@@ -174,6 +171,12 @@ footer {
   height: 100%;
 }
 
+.wrapFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .footerlinks {
   font-size: 80%;
 }
@@ -184,25 +187,48 @@ footer {
   align-items: flex-end;
 }
 
-
 iframe {
   width: 300px;
   height: 300px;
-  margin: 20px
+  margin: 20px;
 }
 
 .mapImg {
   width: 300px;
   height: 300px;
-  margin: 20px
+  margin: 20px;
+}
+
+.recensionerTitle {
+  font-weight: 400;
+  text-align: center;
+  top: 80px;
+  position: relative;
+}
+
+.refdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+}
+
+.recensDiv {
+  width: 60%;
+}
+
+.arrowButton {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border: none;
 }
 
 @media (min-width: 800px) {
-header {
-  display: flex;
-  justify-content: center;
-}
-
+  header {
+    display: flex;
+    justify-content: center;
+  }
 
   header nav {
     display: block;
@@ -217,7 +243,7 @@ header {
 
   .logo {
     position: absolute;
-    left: 15px
+    left: 15px;
   }
 
   iframe {
@@ -230,4 +256,11 @@ header {
     height: 500px;
   }
 
+  .linkFooter {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    width: 700px;
+    justify-content: space-between
+  }
 }
