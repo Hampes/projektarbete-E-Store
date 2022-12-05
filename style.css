@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d4d4d4;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.mobileStart {
+  display: flex;
+}
+
+.logo {
+  width: 80px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #919191;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background: #1d1f1d;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: none;
+}
+
+#hamburger-icon {
+  display: block;
+}
+
+.homePage {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+.product {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+.references {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+.about {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+.contact {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logoFooter {
+  width: 100px;
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+}
+
+.footerlinks {
+  font-size: 80%;
+}
+
+.linkFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (min-width: 800px) {
+  header nav {
+    display: block;
+  }
+  #hamburger-icon {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
