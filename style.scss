@@ -136,10 +136,6 @@ ul li:hover {
 
 .open .mobile-menu {
   @include flex(column, flex-start, center, nowrap);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: center;
 }
 
 .mobile-menu {
@@ -186,9 +182,6 @@ footer {
 
 .divFooter {
   @include flex(column, space-around, flex-start, nowrap);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
   width: 50%;
   height: 100%;
 }
@@ -205,9 +198,6 @@ footer {
 
 .linkFooter {
   @include flex(column, flex-start, flex-end, nowrap);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end;
 }
 
 iframe {
@@ -233,9 +223,6 @@ iframe {
 
 .refdiv {
   @include flex(row, space-around, center, nowrap);
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
   height: 60%;
 }
 
@@ -272,9 +259,6 @@ iframe {
 
 .contactForm {
   @include flex(column, space-around, flex-start, nowrap);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
   height: 400px;
  
 }
@@ -283,9 +267,6 @@ iframe {
   margin-top: 40px;
   @include flex(column, space-around, center, nowrap);
   width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 .contactImg {
   display: flex;
@@ -366,10 +347,6 @@ main {
 
   .linkFooter {
     @include flex(row, space-between, flex-start, nowrap);
-
-    // display: flex;
-    // justify-content: space-between;
-    // flex-direction: row;
     font-size: 22px;
     width: 630px;
   }
