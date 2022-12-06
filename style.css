@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   padding: 0;
@@ -205,6 +206,79 @@ iframe {
   width: 230px;
   height: 230px;
   margin-bottom: 30px;
+}
+
+.catchphrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.historia h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.allCardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardwrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cardwrapper2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.anställd {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anställd img {
+  display: flex;
+  height: 220px;
+  width: 250px;
+}
+
+.anställd1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anställd1 img {
+  display: flex;
+  height: 220px;
+  width: 250px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: 400px;
+  background: rgb(157, 114, 69);
+}
+
+.card:hover {
+  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }
 
 .recensionerTitle {
