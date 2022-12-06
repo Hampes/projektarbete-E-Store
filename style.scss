@@ -31,10 +31,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 h3 {
@@ -103,7 +103,7 @@ ul {
   @include flex(row, space-around, center, nowrap) // display: flex;
     // align-items: center;
     // justify-content: space-around;
-
+;
 }
 
 ul a {
@@ -173,7 +173,6 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  
 }
 
 .logoFooter {
@@ -213,94 +212,90 @@ iframe {
   margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
-.catchphrase{
+.catchphrase {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.historia h2{
+.historia h2 {
   font-size: 2rem;
   text-decoration: underline;
-  
 }
 
-.allCardWrapper{
+.allCardWrapper {
   display: flex;
   flex-direction: column;
-  
 }
 
-.cardwrapper{
+.cardwrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.cardwrapper2{
+.cardwrapper2 {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin-top: 20px;
 }
 
-.anställd{
+.anställd {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.anställd img{
+.anställd img {
   display: flex;
   height: 220px;
   width: 250px;
-
 }
 
-.anställd1{
+.anställd1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.anställd1 img{
+.anställd1 img {
   display: flex;
   height: 220px;
   width: 250px;
-
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 30%;
   height: 400px;
-  background:rgb(157, 114, 69);
+  background: rgb(157, 114, 69);
 }
 
 .card:hover {
-  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
   padding: 2px 16px;
 }
 
-
 .recensionerTitle {
   font-weight: 400;
   text-align: center;
-  top: 80px;
+  top: 20%;
   position: relative;
   z-index: 0;
 }
 
 .refdiv {
   @include flex(row, space-around, center, nowrap);
-  height: 60%;
+  position: relative;
+  bottom: 13%;
+  height: 100%;
 }
 
 .recensDiv {
@@ -337,7 +332,6 @@ iframe {
 .contactForm {
   @include flex(column, space-around, flex-start, nowrap);
   height: 400px;
- 
 }
 
 .contactMain {
@@ -351,7 +345,6 @@ iframe {
   height: 600px;
   justify-content: space-around;
 }
-
 
 input,
 textarea,
@@ -368,18 +361,12 @@ button {
 
 button {
   font-weight: bold;
-  background: #fff
+  background: #fff;
 }
 
 .textarea {
   height: 250px;
-  
 }
-
-main {
-  
-}
-
 
 @media (min-width: 900px) {
   .contactMain {
@@ -395,7 +382,6 @@ main {
     width: 300px;
     height: 300px;
   }
-
 }
 
 @media (min-width: 800px) {
@@ -420,8 +406,6 @@ main {
     left: 15px;
   }
 
-  
-
   .linkFooter {
     @include flex(row, space-between, flex-start, nowrap);
     font-size: 22px;
@@ -435,24 +419,18 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    
   }
 
   iframe {
     width: 250px;
     height: 250px;
     margin-top: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
-  
+
   .mapImg {
     width: 250px;
     height: 250px;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
-
- 
-  
 }
-
-
