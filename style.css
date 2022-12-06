@@ -208,7 +208,6 @@ iframe {
   margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .catchphrase {
   display: flex;
   justify-content: center;
@@ -282,8 +281,6 @@ iframe {
   padding: 2px 16px;
 }
 
-header {
-=======
 .recensionerTitle {
   font-weight: 400;
   text-align: center;
@@ -328,38 +325,10 @@ header {
 }
 
 .container {
->>>>>>> 0900eeca77a1d87203c2e8a15e119d8a3dab2bc3
   display: flex;
   justify-content: center;
 }
 
-<<<<<<< HEAD
-header nav {
-  display: block;
-}
-
-#hamburger-icon {
-  display: none;
-}
-
-.mobileStart {
-  display: none;
-}
-
-.logo {
-  position: absolute;
-  left: 15px;
-}
-
-iframe {
-  width: 500px;
-  height: 500px;
-}
-
-.mapImg {
-  width: 500px;
-  height: 500px;
-=======
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -472,5 +441,4 @@ button {
     height: 250px;
     margin-bottom: 0;
   }
->>>>>>> 0900eeca77a1d87203c2e8a15e119d8a3dab2bc3
 }/*# sourceMappingURL=style.css.map */
