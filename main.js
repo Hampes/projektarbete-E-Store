@@ -1,5 +1,10 @@
+let mobileFirst = document.querySelector(".mobileFirst")
+
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
+  mobileFirst.style.display = "none"
+
+
 }
 
 var slideIndex = 1;

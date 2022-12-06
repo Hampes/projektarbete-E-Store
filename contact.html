@@ -14,12 +14,12 @@
               <ul>
                   <li><a href="index.html">Startsida</a></li>
                   <li><a href="productsite.html">Produktsida</a></li>
-                  <li><a href="references.html">Referenser</a></li>
+                  <li><a href="references.html">Referens</a></li>
                   <li><a href="about.html">Om oss</a></li>
                   <li><a class="contact" href="contact.html">Kontakta oss</a></li>
                 </ul>
             </nav>
-            <h3 class="MobileStart">Kontakta oss</h3>
+            <h3 class="mobileStart">Kontakta oss</h3>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
                 
                 <div class="bar1"></div>
@@ -34,69 +34,59 @@
                 </ul>
             </div>
         </header>
-      <div class="kontaktForm">
-        <div class="kontakt">
-          <div class="from">
-            <label for="label">Från</label>
-            <div class="namn">
-            <input type="input" type="text" placeholder="För- och Efternamn">
-          </div>
-          <div class="email">
-            <input type="input" type="email" placeholder="Din Email">
-           </div>
-          </div>
-        </div>
 
-        <div class="sektion">
-          <div class="avdelning">
+        <main class="contactMain">
+
+        
+
+        <form class="contactForm" action="">
+
+            <label for="label">Från</label>            
+            <input type="input" type="text" placeholder="För- och Efternamn">         
+            <input type="input" type="email" placeholder="Din Email">
+              
             <label class="label">Vad gäller ditt ärende?</label>
-            <div class="dropdown">
+           
               <select>
                 <option>Köp av produkt</option>
                 <option>Frågor om företaget</option>
                 <option>Synpunkter på webbplats</option>
               </select>
-            </div>
-          </div>
-        </div>
+          
 
-        <div class="subject">
-          <div>
-          <label class="label">Ämne</label>
-        </div>
-         <div>
-          <input type="input" type="text" placeholder="ex, Jag vill göra en retur">
-        </div>
-       </div>
-
-       <div class="question">
-        <div>
-          <label class="label">Din fråga</label>
-        </div>
-        <div class="yourQuestion">
-          <textarea class="textarea" placeholder="Hur kan vi hjälpa dig?"></textarea>
-        </div>
-        <div class="messageBtn">
-          <button>Skicka meddelande</button>
-         </div>  
-       </div>
-      </div>
        
-        <div>
-          <div class="telefon">
-              <p>Ring till oss: <a href="08-7584977">08-7584977</a></p>
-              <div class="adress">
-                <p>Hitta till oss: Flyghamnsvägen 16B</p>
-              </div>
-          </div>
-        </div>
-        <div>
-          <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.2452963014307!2d18.09865621618714!3d59.4456608087316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ba0c167a2c5%3A0x91c22ad167ed5baa!2sFlyghamnsv%C3%A4gen%2016B%2C%20183%2064%20T%C3%A4by!5e0!3m2!1ssv!2sse!4v1670239745468!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <img class="mapImg" src="/pics/e-store.jpg.png" alt="Det här är en bild på vår arbetsplats">
-          </div>
-        </div>
+          <label class="label">Ämne</label>
+      
+          <input type="input" type="text" placeholder="ex, Jag vill göra en retur">
+       
+
+      
+          <label class="label">Din fråga</label>
+       
         
+          <textarea class="textarea" placeholder="Hur kan vi hjälpa dig?"></textarea>
+        
+       
+          <button>Skicka meddelande</button>
+          <p>Ring till oss: <a href="08-7584977">08-7584977</a></p>
+            <p>Hitta till oss: Flyghamnsvägen 16B</p>
+    </form>
+        
+          
+
+          
+         
+        <div class="contactImg">
+
+          
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.2452963014307!2d18.09865621618714!3d59.4456608087316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ba0c167a2c5%3A0x91c22ad167ed5baa!2sFlyghamnsv%C3%A4gen%2016B%2C%20183%2064%20T%C3%A4by!5e0!3m2!1ssv!2sse!4v1670239745468!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img class="mapImg" src="/pics/e-store.jpg.png" alt="Det här är en bild på vår arbetsplats">
+        </div>
+           
+         
+       
+      </main>
         <footer>
             <div class="divFooter">
                 <img class="logoFooter" src="pics/Logo.png" alt="">
