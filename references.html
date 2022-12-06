@@ -3,56 +3,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <title>E-Store</title>
   </head>
   <body>
-      <header>
-        <div id="brand"><img class="logo" src="Logo.png" alt=""></div>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Startsida</a></li>
-                  <li><a href="productsite.html">Produktsida</a></li>
-                  <li><a class="references" href="references.html">Referenser</a></li>
-                  <li><a href="about.html">Om oss</a></li>
-                  <li><a href="contact.html">Kontakta oss</a></li>
-                </ul>
-            </nav>
-            <h3 class="MobileStart">Referenser</h3>
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobile-menu">
-                    <li><a href="index.html">Startsida</a></li>
-                    <li><a href="productsite.html">Produktsida</a></li>
-                    <li><a class="references" href="references.html">Referenser</a></li>
-                    <li><a href="about.html">Om oss</a></li>
-                    <li><a href="contact.html">Kontakta oss</a></li>
-                </ul>
-            </div>
-        </header>
-        
-        
-        <footer>
-            <div class="divFooter">
-                <img class="logoFooter" src="Logo.png" alt="">
-                <p>© E-STORE 2022</p>
-            </div>
+    <header>
+      <div id="brand"><img class="logo" src="pics/Logo.png" alt="" /></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="productsite.html">Produktsida</a></li>
+          <li><a class="references" href="references.html">Referenser</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </nav>
+      <h3 class="mobileStart">Referenser</h3>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="productsite.html">Produktsida</a></li>
+          <li><a class="references" href="references.html">Referenser</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </div>
+    </header>
 
-            <div class="linkFooter">
-                <ul class="linkFooter">
-                    <li><a class="footerlinks" href="/home">Startsida</a></li>
-                    <li><a class="footerlinks" href="/products">Produktsida</a></li>
-                    <li><a class="footerlinks" href="references.html">Referenser</a></li>
-                    <li><a class="footerlinks" href="about.html">Om oss</a></li>
-                    <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
-                </ul>
-            </div>
+    <h2 class="recensionerTitle">Recensioner</h2>
 
+    <div class="refDiv">
+      <div class="firstArrow">
+        <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
+      </div>
+      <div class="recensDiv">
+        <p class="mySlides">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+          ipsum quibusdam, odio fuga, placeat nihil delectus iste, quo sequi
+          perspiciatis recusandae tempora aliquid accusantium.
+        </p>
+        <p class="mySlides">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam cum,
+          sequi nisi quisquam perferendis accusamus sed alias pariatur quod
+          doloribus, esse minima error vitae. Voluptates laborum ducimus optio
+          libero quibusdam.
+        </p>
+        <p class="mySlides">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam,
+          omnis officia qui et sapiente? Voluptates ducimus sit minus incidunt?
+        </p>
+      </div>
 
-    </footer>
+      <div class="secondArrow">
+        <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="wrapFooter">
+      <footer>
+        <div class="divFooter">
+          <img class="logoFooter" src="pics/Logo.png" alt="" />
+          <p>© E-STORE 2022</p>
+        </div>
+
+        <div class="linkFooter">
+          <ul class="linkFooter">
+            <li><a class="footerlinks" href="index.html">Startsida</a></li>
+            <li><a class="footerlinks" href="productsite.html">Produktsida</a></li>
+            <li>
+              <a class="footerlinks" href="references.html">Referenser</a>
+            </li>
+            <li><a class="footerlinks" href="about.html">Om oss</a></li>
+            <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
