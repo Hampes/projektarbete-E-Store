@@ -1,0 +1,138 @@
+.cardShoes {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    @include flex(column, flex-start, flex-start);
+    height: 750px;
+    width: 450px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .cardShoes:hover {
+    box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .shoes {
+    @include flex(row, space-around, flex-start);
+    width: 100%;
+    
+  }
+  
+  .cardShoes img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .selectWrap {
+    flex-direction: column;
+  }
+  .visa {
+    display: flex;
+  }
+  
+  .cardShirts {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    @include flex(column, flex-start, flex-start);
+    height: 750px;
+    width: 450px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .cardShirts:hover {
+    box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .shirts {
+    @include flex(row, space-around, flex-start);
+    width: 100%;
+  
+  }
+  
+  .cardShirts img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .visa {
+    display: flex;
+  }
+  .cardPants {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 450px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+  }
+  
+  .cardPants:hover {
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .pants{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .cardPants img{
+   width: 100%;
+   height: 70%;
+  }
+  
+  .selectWrap{
+    flex-direction: column;
+  }
+  .cardJackets {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 450px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+  }
+  
+  .cardJackets:hover {
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .jackets{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .cardJackets img{
+   width: 100%;
+   height: 70%;
+  }
+  
+  .selectWrap{
+    flex-direction: column;
+  }
+  
+  .buyBtn button{
+  color: white;
+  background-color: orange;
+  border: solid black;
+  font-size: 20px;
+  }
+  

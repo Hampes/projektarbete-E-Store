@@ -1,20 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import "./partials/mixins";
+@import "./partials/header";
+@import "./partials/footer";
 @import "./partials/about";
+@import "./partials/contact";
+@import "./partials/product";
  
 
 
-
-@mixin flex(
-  $direction: row,
-  $justify: flex-start,
-  $align: flex-start,
-) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
 
 * {
   padding: 0;
@@ -30,8 +23,8 @@ body {
   margin: 0;
   padding: 0;
 
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -52,116 +45,7 @@ h3 {
   left: 2%;
 }
 
-// ---------HEADER-----------
-.homePage {
-  @include highlight();
-}
 
-.product {
-  @include highlight();
-}
-
-.references {
-  @include highlight();
-}
-
-.about {
-  @include highlight();
-}
-
-.contact {
-  @include highlight();
-}
-
-header a {
-  text-decoration: none;
-}
-
-header {
-  padding: 0 20px;
-  background-color: #ebebeb;
-  color: #222;
-  height: 50px;
-  @include flex(row, space-around, flex-start);
-}
-#hamburger-icon {
-  margin: auto 0;
-  display: none;
-  cursor: pointer;
-}
-
-#hamburger-icon div {
-  width: 30px;
-  height: 2px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-ul {
-  list-style: none;
-  height: 100%;
-  @include flex(row, space-around, center);
-}
-
-ul a {
-  color: #222;
-}
-
-ul li {
-  padding: 5px;
-  margin-left: 10px;
-}
-
-ul li:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2 {
-  opacity: 0;
-}
-
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .mobile-menu {
-  @include flex(column, flex-start, center);
-}
-
-.mobile-menu {
-  display: none;
-  position: absolute;
-  background: #1d1f1d;
-  top: 50px;
-  left: 0;
-  height: 250px;
-  width: 100%;
-  z-index: 3;
-}
-
-.mobile-menu li {
-  margin-bottom: 10px;
-}
-
-header nav {
-  display: none;
-}
-
-#hamburger-icon {
-  display: block;
-}
-
-h2 {
-  text-align: center;
-}
 .start{
   display: flex;
   font-size: 70px;
@@ -208,42 +92,7 @@ h2 {
   -webkit-animation-play-state: running;
 }
 
-// -----------FOOTER------------
-footer {
-  height: 200px;
-  width: 100%;
-  background-color: grey;
-  @include flex(row, space-around, flex-start);
-  padding: 20px;
-}
 
-.logoFooter {
-  width: 100px;
-}
-
-.divFooter {
-  @include flex(column, space-around, flex-start);
-  width: 50%;
-  height: 100%;
-}
-
-.wrapFooter {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.footerlinks {
-  font-size: 80%;
-}
-
-.linkFooter {
-  @include flex(column, flex-start, flex-end);
-}
-
-// SLUT PÅ FOOTER-------------------------------------
-
-// -----KONTAKTA OSS---------------------
 
 iframe {
   width: 230px;
@@ -261,143 +110,6 @@ iframe {
 
 // SHOE.HTML---------------------------
 
-.cardShoes {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  @include flex(column, flex-start, flex-start);
-  height: 750px;
-  width: 450px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.cardShoes:hover {
-  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.shoes {
-  @include flex(row, space-around, flex-start);
-  width: 100%;
-  
-}
-
-.cardShoes img {
-  width: 100%;
-  height: 70%;
-}
-
-.selectWrap {
-  flex-direction: column;
-}
-.visa {
-  display: flex;
-}
-
-.cardShirts {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  @include flex(column, flex-start, flex-start);
-  height: 750px;
-  width: 450px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.cardShirts:hover {
-  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
-}
-
-.shirts {
-  @include flex(row, space-around, flex-start);
-  width: 100%;
-
-}
-
-.cardShirts img {
-  width: 100%;
-  height: 70%;
-}
-
-.visa {
-  display: flex;
-}
-.cardPants {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 750px;
-  width: 450px;
- margin-bottom: 20px;
- margin-top: 20px;
-}
-
-.cardPants:hover {
-  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.pants{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.cardPants img{
- width: 100%;
- height: 70%;
-}
-
-.selectWrap{
-  flex-direction: column;
-}
-.cardJackets {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 750px;
-  width: 450px;
- margin-bottom: 20px;
- margin-top: 20px;
-}
-
-.cardJackets:hover {
-  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.jackets{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.cardJackets img{
- width: 100%;
- height: 70%;
-}
-
-.selectWrap{
-  flex-direction: column;
-}
-
-.buyBtn button{
-color: white;
-background-color: orange;
-border: solid black;
-font-size: 20px;
-}
 
 .recensionerTitle {
   font-weight: 400;
@@ -515,102 +227,6 @@ button {
   }
 }
 
-
-
-
-// --------OM OSS----------------
-// .catchphrase {
-//   @include flex(row, center, center);
-//   font-size: 15px;
-//   margin-bottom: 2rem;
-//   text-align: center;
-// }
-// .historia {
-//   h3 {
-//     margin-bottom: 10px;
-//     font-size: 20px;
-//     text-decoration: underline;
-//     text-align: center;
-//   }
-//   p {
-//     font-size: 14px;
-//     margin: 15px;
-//   }
-// }
-
-
-
-// .flip-card-wrapper {
-//   @include flex(row, center, flex-start);
-//   max-width: 300px;
-  
-// }
-
-// .flip-card {
-//   background-color: transparent;
-//   width: 130px;
-//   height: 140px;
-//   perspective: 1000px;
-//   margin-bottom: 30px;
-
-//   img {
-//     height: 150px;
-//     width: 125px;
-//   }
-
-//   h2 {
-//     font-size: 13px;
-//   }
-
-//   h3 {
-//     font-size: 10px;
-//   }
-
-//   p {
-//     font-size: 7px;
-//   }
-
-//   a {
-//     font-size: 7px;
-//     text-decoration: none;
-//     color: black;
-//   }
-// }
-
-// .flip-card-inner {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   text-align: center;
-//   transition: transform 0.6s;
-//   transform-style: preserve-3d;
-//   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
-// }
-
-// .flip-card:hover .flip-card-inner {
-//   transform: rotateY(180deg);
-// }
-
-// .flip-card-front,
-// .flip-card-back {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   -webkit-backface-visibility: hidden;
-//   backface-visibility: hidden;
-// }
-
-// .flip-card-front {
-//   background-color: #bbb;
-//   color: black;
-//   @include flex(row, center, center);
-// }
-
-// .flip-card-back {
-//   background-color: #2980b9;
-//   color: white;
-//   transform: rotateY(180deg);
-// }
 
 
 @media (min-width: 570px) {
