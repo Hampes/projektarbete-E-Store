@@ -20,7 +20,11 @@
           <li><a href="contact.html">Kontakta oss</a></li>
         </ul>
       </nav>
-      <h3 class="mobileStart">Referenser</h3>
+
+      <div class="mobileStartDiv">
+        <h3 class="mobileStart">Recensioner</h3>
+      </div>
+
       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -35,34 +39,37 @@
       </div>
     </header>
 
-    <h2 class="recensionerTitle">Recensioner</h2>
+    <main>
+      <h2 class="recensionerTitle">Recensioner</h2>
 
-    <div class="refDiv">
-      <div class="firstArrow">
-        <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
-      </div>
-      <div class="recensDiv">
-        <p class="mySlides">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-          ipsum quibusdam, odio fuga, placeat nihil delectus iste, quo sequi
-          perspiciatis recusandae tempora aliquid accusantium.
-        </p>
-        <p class="mySlides">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam cum,
-          sequi nisi quisquam perferendis accusamus sed alias pariatur quod
-          doloribus, esse minima error vitae. Voluptates laborum ducimus optio
-          libero quibusdam.
-        </p>
-        <p class="mySlides">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam,
-          omnis officia qui et sapiente? Voluptates ducimus sit minus incidunt?
-        </p>
-      </div>
+      <div class="refDiv">
+        <div class="firstArrow">
+          <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
+        </div>
+        <div class="recensDiv">
+          <p class="mySlides">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            ipsum quibusdam, odio fuga, placeat nihil delectus iste, quo sequi
+            perspiciatis recusandae tempora aliquid accusantium.
+          </p>
+          <p class="mySlides">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam cum,
+            sequi nisi quisquam perferendis accusamus sed alias pariatur quod
+            doloribus, esse minima error vitae. Voluptates laborum ducimus optio
+            libero quibusdam.
+          </p>
+          <p class="mySlides">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            quibusdam, omnis officia qui et sapiente? Voluptates ducimus sit
+            minus incidunt?
+          </p>
+        </div>
 
-      <div class="secondArrow">
-        <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
+        <div class="secondArrow">
+          <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
+        </div>
       </div>
-    </div>
+    </main>
 
     <div class="wrapFooter">
       <footer>
@@ -74,7 +81,9 @@
         <div class="linkFooter">
           <ul class="linkFooter">
             <li><a class="footerlinks" href="index.html">Startsida</a></li>
-            <li><a class="footerlinks" href="productsite.html">Produktsida</a></li>
+            <li>
+              <a class="footerlinks" href="productsite.html">Produktsida</a>
+            </li>
             <li>
               <a class="footerlinks" href="references.html">Referenser</a>
             </li>
