@@ -162,8 +162,53 @@ header nav {
 h2 {
   text-align: center;
 }
+.start{
+  display: flex;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+}
 
-// -----------FOOTER---------------------------------------------
+.slider-frame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 650px;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes slide_animation{
+  0%{left:0px}
+  10%{left:0px}
+  20%{left:1200px}
+  30%{left:1200px}
+  40%{left:2400px}
+  50%{left:2400px}
+  60%{left:1200px}
+  70%{left:1200px}
+  80%{left:0px}
+  90%{left:0px}
+  100%{left:0px}
+}
+
+.slide-images{
+  width: 3800px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name:slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+// -----------FOOTER------------
 footer {
   height: 200px;
   width: 100%;
@@ -279,6 +324,79 @@ iframe {
 
 .visa {
   display: flex;
+}
+.cardPants {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  width: 450px;
+ margin-bottom: 20px;
+ margin-top: 20px;
+}
+
+.cardPants:hover {
+  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.pants{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.cardPants img{
+ width: 100%;
+ height: 70%;
+}
+
+.selectWrap{
+  flex-direction: column;
+}
+.cardJackets {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  width: 450px;
+ margin-bottom: 20px;
+ margin-top: 20px;
+}
+
+.cardJackets:hover {
+  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.jackets{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.cardJackets img{
+ width: 100%;
+ height: 70%;
+}
+
+.selectWrap{
+  flex-direction: column;
+}
+
+.buyBtn button{
+color: white;
+background-color: orange;
+border: solid black;
+font-size: 20px;
 }
 
 .recensionerTitle {
@@ -636,7 +754,3 @@ button {
     }
   }
 }
-
-
-
-
