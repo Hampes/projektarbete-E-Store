@@ -13,14 +13,16 @@
         <div id="brand"><img class="logo" src="pics/Logo.png" alt=""></div>
         <nav>
             <ul>
-                <li><a class="homePage" href="index.html">Startsida</a></li>
-                <li><a  href="productsite.html">Produktsida</a></li>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a class="product" href="productsite.html">Produktsida</a></li>
                 <li><a href="references.html">Referenser</a></li>
                 <li><a href="about.html">Om oss</a></li>
                 <li><a href="contact.html">Kontakta oss</a></li>
               </ul>
           </nav>
+          <div class="mobileStartDiv">
           <h3 class="mobileStart">Startsida</h3>
+        </div>
           <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
               
               <div class="bar1"></div>
@@ -36,13 +38,13 @@
           </div>
       </header>
       
-      <div class="shirts">
-        <div class="cardShirts">
-          <img src="pics/shirt1.png" alt="En bild på en svart T shirt utan tryck">
+      <div class="shoes">
+        <div class="cardShoes">
+          <img class="productImg" src="pics/shirt1.png" alt="En bild på en svart T shirt utan tryck">
           <div class="container">
-              <p class="priceShirts">199:-</p>
-            <h2>Plain shirt</h2> 
-            <div>
+              <h2 class="priceShirts">199:-</h2>
+            <p>Plain shirt</p> 
+            
             <select class="sizeShirts"> 
               <option selected disabled>Välj storlek</option>
               <option>XL</option>
@@ -62,16 +64,15 @@
               <button>&#128722;Lägg till i varukorg</button>
             </div>
           </div>
-          </div>
+          
         </div>
   
-        <div class="cardShirts">
-          <img src="pics/shirt2.png" alt="En bild på en vit T-shirt med tryck på en anka som har på sig skatingskor">
+        <div class="cardShoes">
+          <img class="productImg" src="pics/shirt2.png" alt="En bild på en vit T-shirt med tryck på en anka som har på sig skatingskor">
           <div class="container">
-              <p>249:-</p>
-            <h2>Ankademin shirt</h2> 
-          </div>
-            <div class="selectWrap">
+              <h2>249:-</h2>
+            <p>Ankademin shirt</p> 
+        
               <select class="sizeShirts"> 
                 <option selected disabled>Välj storlek</option>
                 <option>XL</option>
@@ -92,12 +93,12 @@
           </div>
         
   
-        <div class="cardShirts">
-          <img src="pics/shirt3.png" alt="En bild på en svart T-shirt med ett tryck över vänster bröst med en brinnande fjäril">
+        <div class="cardShoes">
+          <img class="productImg" src="pics/shirt3.png" alt="En bild på en svart T-shirt med ett tryck över vänster bröst med en brinnande fjäril">
           <div class="container">
-              <p>299:-</p>
-          <h2>Butterfly shirt</h2>
-          <div>
+              <h2>299:-</h2>
+          <p>Butterfly shirt</p>
+          
               <select class="sizeShirts"> 
                 <option selected disabled>Välj storlek</option>
                 <option>XL</option>
@@ -118,7 +119,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
 
 
       <footer>
@@ -136,9 +137,9 @@
                   <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
               </ul>
           </div>
-        </div>
+        
 
 
   </footer>
    </body>
-   </html>
+   </html> 

@@ -1,31 +1,49 @@
 footer {
-    height: 200px;
+  height: 200px;
+  width: 100%;
+  background-color: grey;
+  @include flex(row, space-around, flex-start);
+  padding: 20px;
+}
+
+.logoFooter {
+  width: 100px;
+}
+
+.divFooter {
+  @include flex(column, space-around, flex-start);
+  width: 50%;
+  height: 100%;
+}
+
+.wrapFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerlinks {
+  font-size: 80%;
+}
+
+.linkFooter {
+  @include flex(column, flex-start, flex-end);
+}
+
+
+@media (min-width: 800px) {
+  footer {
+    height: 140px;
     width: 100%;
     background-color: grey;
     @include flex(row, space-around, flex-start);
     padding: 20px;
   }
-  
-  .logoFooter {
-    width: 100px;
-  }
-  
-  .divFooter {
-    @include flex(column, space-around, flex-start);
-    width: 50%;
-    height: 100%;
-  }
-  
-  .wrapFooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footerlinks {
-    font-size: 80%;
-  }
-  
   .linkFooter {
-    @include flex(column, flex-start, flex-end);
+    @include flex(row, space-between, flex-start);
+    font-size: 22px;
+    width: 630px;
   }
+
+}
+

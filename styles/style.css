@@ -98,7 +98,7 @@ ul li:hover {
 .mobile-menu {
   display: none;
   position: absolute;
-  background: #1d1f1d;
+  background: #888888;
   top: 50px;
   left: 0;
   height: 250px;
@@ -163,6 +163,26 @@ footer {
   align-items: flex-end;
 }
 
+@media (min-width: 800px) {
+  footer {
+    height: 140px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .linkFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 22px;
+    width: 630px;
+  }
+}
 .catchphrase {
   display: flex;
   flex-direction: row;
@@ -194,14 +214,14 @@ footer {
 
 .flip-card {
   background-color: transparent;
-  width: 130px;
-  height: 140px;
+  width: 140px;
+  height: 150px;
   perspective: 1000px;
   margin-bottom: 30px;
 }
 .flip-card img {
   height: 150px;
-  width: 125px;
+  width: 140px;
 }
 .flip-card h2 {
   font-size: 13px;
@@ -254,6 +274,94 @@ footer {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 570px) {
+  .flip-card-wrapper {
+    max-width: 650px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 230px;
+    height: 230px;
+    perspective: 1000px;
+    padding: 30px;
+  }
+  .flip-card img {
+    height: 175px;
+    width: 175px;
+  }
+  .flip-card h2 {
+    font-size: 18px;
+  }
+  .flip-card h3 {
+    font-size: 14px;
+  }
+  .flip-card p {
+    font-size: 10px;
+  }
+  .flip-card a {
+    font-size: 10px;
+  }
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+}
+.imgProduct {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.productDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.linkProduct {
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  margin: 20px 0 20px 0;
+  border-radius: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.productTitle {
+  margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+  .imgProduct {
+    border-radius: 100%;
+    width: 80%;
+  }
+  .productDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .productWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.shoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .cardShoes {
@@ -262,11 +370,37 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  height: 750px;
-  width: 450px;
+  align-items: center;
+  height: 400px;
+  width: 200px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+.cardShoes h2 {
+  font-size: 14px;
+}
+.cardShoes select {
+  width: 110px;
+}
+.cardShoes button {
+  width: 110px;
+  font-size: 10px;
+  background: orange;
+}
+.cardShoes .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cardShoes .pantsProduct {
+  height: 64%;
+}
+.cardShoes .shirtImg {
+  height: 64%;
+}
+.cardShoes .productImg {
+  height: 64%;
 }
 
 .cardShoes:hover {
@@ -277,136 +411,36 @@ footer {
   padding: 2px 16px;
 }
 
-.shoes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-}
-
 .cardShoes img {
   width: 100%;
   height: 70%;
 }
 
-.selectWrap {
-  flex-direction: column;
+@media (min-width: 800px) {
+  .shoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .shoes .cardShoes {
+    margin: 35px;
+    width: 300px;
+    height: 500px;
+  }
+  .shoes h2 {
+    font-size: 14px;
+  }
+  .shoes select {
+    width: 150px;
+  }
+  .shoes button {
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+    background: orange;
+  }
 }
-
-.visa {
-  display: flex;
-}
-
-.cardShirts {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 750px;
-  width: 450px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.cardShirts:hover {
-  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
-}
-
-.shirts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.cardShirts img {
-  width: 100%;
-  height: 70%;
-}
-
-.visa {
-  display: flex;
-}
-
-.cardPants {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 750px;
-  width: 450px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.cardPants:hover {
-  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.pants {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.cardPants img {
-  width: 100%;
-  height: 70%;
-}
-
-.selectWrap {
-  flex-direction: column;
-}
-
-.cardJackets {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 750px;
-  width: 450px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.cardJackets:hover {
-  box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.jackets {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.cardJackets img {
-  width: 100%;
-  height: 70%;
-}
-
-.selectWrap {
-  flex-direction: column;
-}
-
-.buyBtn button {
-  color: white;
-  background-color: orange;
-  border: solid black;
-  font-size: 20px;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -617,32 +651,6 @@ button {
   height: 250px;
 }
 
-.imgProduct {
-  border-radius: 100%;
-  width: 100%;
-}
-
-.productDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.linkProduct {
-  text-align: center;
-  width: 40%;
-  height: 100%;
-  margin: 20px 0 20px 0;
-  border-radius: 100%;
-  text-decoration: none;
-  color: black;
-}
-
-.productTitle {
-  margin-top: 40px;
-}
-
 @media (min-width: 900px) {
   .contactMain {
     margin-top: 40px;
@@ -658,34 +666,6 @@ button {
   .mapImg {
     width: 300px;
     height: 300px;
-  }
-}
-@media (min-width: 570px) {
-  .flip-card-wrapper {
-    max-width: 650px;
-  }
-  .flip-card {
-    background-color: transparent;
-    width: 175px;
-    height: 175px;
-    perspective: 1000px;
-    padding: 30px;
-  }
-  .flip-card img {
-    height: 175px;
-    width: 175px;
-  }
-  .flip-card h2 {
-    font-size: 24px;
-  }
-  .flip-card h3 {
-    font-size: 18px;
-  }
-  .flip-card p {
-    font-size: 14px;
-  }
-  .flip-card a {
-    font-size: 14px;
   }
 }
 @media (min-width: 800px) {
@@ -710,24 +690,6 @@ button {
   .logo {
     position: absolute;
     left: 15px;
-  }
-  .linkFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 22px;
-    width: 630px;
-  }
-  footer {
-    height: 140px;
-    width: 100%;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
   }
   iframe {
     width: 250px;

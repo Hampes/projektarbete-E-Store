@@ -16,14 +16,17 @@
       <div id="brand"><img class="logo" src="pics/Logo.png" alt="" /></div>
       <nav>
         <ul>
-          <li><a class="homePage" href="index.html">Startsida</a></li>
-          <li><a href="productsite.html">Produktsida</a></li>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a class="product" href="productsite.html">Produktsida</a></li>
           <li><a href="references.html">Referenser</a></li>
           <li><a href="about.html">Om oss</a></li>
           <li><a href="contact.html">Kontakta oss</a></li>
         </ul>
       </nav>
-      <h3 class="mobileStart">Startsida</h3>
+      <div class="mobileStartDiv">
+
+        <h3 class="mobileStart">Produktsida</h3>
+      </div>
       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -38,14 +41,14 @@
       </div>
     </header>
 
-    <div class="jackets">
-        <div class="cardJackets">
-          <img src="pics/jacka1.png" alt="En bild på en mörk grön dunjacka">
+    <div class="shoes">
+        <div class="cardShoes">
+          <img class="productImg" src="pics/jacka1.png" alt="En bild på en mörk grön dunjacka">
           <div class="container">
-              <p class="priceJackets">899:-</p>
-            <h2>Dunjacka</h2> 
-            <div>
-                <div class="selectWrap">
+              <h2>899:-</h2>
+            <p>Dunjacka</p> 
+           
+                
             <select class="sizeJackets"> 
               <option selected disabled>Välj storlek</option>
               <option>XL</option>
@@ -60,21 +63,18 @@
               <option>Red</option>
               <option>Forest Green</option>
             </select>
-            <div class="buyBtn">
+            
               <button>&#128722;Lägg till i varukorg</button>
-            </div>
-          </div>
-          </div>
+         
         </div>
         </div>
   
-        <div class="cardJackets">
-          <img src="pics/jacka2.png" alt="En bild på en svart dunväst">
+        <div class="cardShoes">
+          <img class="productImg" src="pics/jacka2.png" alt="En bild på en svart dunväst">
           <div class="container">
-              <p>599:-</p>
-            <h2>Dunväst</h2> 
-          </div>
-            <div class="selectWrap">
+              <h2>599:-</h2>
+            <p>Dunväst</p> 
+          
               <select class="sizeJackets"> 
                 <option selected disabled>Välj storlek</option>
                 <option>L</option>
@@ -88,37 +88,36 @@
                 <option>Grey</option>
                 <option>Navy Blue</option>
               </select>
-              <div class="buyBtn">
+              
                 <button>&#128722;Lägg till i varukorg</button>
-              </div>
+            
             </div> 
           </div>
         
   
-          <div class="cardJackets">
-            <img src="pics/jacka3.png" alt="En bild på en tunn jacka med pälsfodring på och krage">
+          <div class="cardShoes">
+            <img class="productImg" src="pics/jacka3.png" alt="En bild på en tunn jacka med pälsfodring på och krage">
             <div class="container">
-                <p>999:-</p>
-              <h2>Tunn jacka</h2> 
-            </div>
-              <div class="selectWrap">
-                <select class="sizeJackets"> 
+                <h2>999:-</h2>
+              <p>Tunn jacka</p> 
+            
+                <select> 
                   <option selected disabled>Välj storlek</option>
                   <option>XL</option>
                   <option>L</option>
                   <option>M</option>
                   <option>S</option>
                 </select>
-                <select class="colorJackets">
+                <select>
                   <option selected disabled>Välj färg</option>
                   <option>Black</option>
                   <option>White</option>
                   <option>Dark Blue</option>
                   <option>Red</option>
                 </select>
-                <div class="buyBtn">
+                
                   <button>&#128722;Lägg till i varukorg</button>
-                </div>
+                
               </div> 
             </div>
       </div>

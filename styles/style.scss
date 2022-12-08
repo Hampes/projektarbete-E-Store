@@ -188,28 +188,7 @@ button {
   height: 250px;
 }
 
-.imgProduct {
-  border-radius: 100%;
-  width: 100%;
-}
 
-.productDiv {
-  @include flex(column, flex-start, center);
-}
-
-.linkProduct {
-  text-align: center;
-  width: 40%;
-  height: 100%;
-  margin: 20px 0 20px 0;
-  border-radius: 100%;
-  text-decoration: none;
-  color: black;
-}
-
-.productTitle {
-  margin-top: 40px;
-}
 
 @media (min-width: 900px) {
   .contactMain {
@@ -229,43 +208,7 @@ button {
 
 
 
-@media (min-width: 570px) {
 
-  .flip-card-wrapper {
-    max-width: 650px;
-  }
-
-  .flip-card {
-    background-color: transparent;
-    width: 175px;
-    height: 175px;
-    perspective: 1000px;
-    padding: 30px;
-
-    img {
-      height: 175px;
-      width: 175px;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-
-    h3 {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-
-    a {
-      font-size: 14px;
-    }
-  }
-
-
-}
 
 
 @media (min-width: 800px) {
@@ -293,19 +236,7 @@ button {
     left: 15px;
   }
 
-  .linkFooter {
-    @include flex(row, space-between, flex-start);
-    font-size: 22px;
-    width: 630px;
-  }
-
-  footer {
-    height: 140px;
-    width: 100%;
-    background-color: grey;
-    @include flex(row, space-around, flex-start);
-    padding: 20px;
-  }
+  
 
   iframe {
     width: 250px;
