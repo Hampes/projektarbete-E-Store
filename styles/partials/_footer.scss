@@ -4,6 +4,8 @@ footer {
   background-color: grey;
   @include flex(row, space-around, flex-start);
   padding: 20px;
+ 
+  
 }
 
 .logoFooter {
@@ -37,7 +39,7 @@ footer {
     width: 100%;
     background-color: grey;
     @include flex(row, space-around, flex-start);
-    padding: 20px;
+    
   }
   .linkFooter {
     @include flex(row, space-between, flex-start);
