@@ -612,7 +612,6 @@ button {
 }
 .recensionerTitle {
   font-weight: 400;
-  text-align: center;
 }
 
 .refdiv {
@@ -635,8 +634,26 @@ button {
   border: none;
 }
 
-.star {
-  font-size: 30px;
+.checked {
+  color: orange;
+}
+
+.fa-star {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.starDiv {
+  margin-top: 20px;
+}
+
+.refWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.mySlides {
+  text-align: center;
 }
 
 * {
