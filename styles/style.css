@@ -401,12 +401,13 @@ footer {
 }
 
 .contactMain {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .contactImg {
@@ -414,7 +415,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 600px;
+  margin-bottom: 30px;
 }
 
 form p {
@@ -486,6 +487,10 @@ button {
     height: 300px;
   }
 }
+.productWrap {
+  height: 100%;
+}
+
 .imgProduct {
   border-radius: 100%;
   width: 100%;
@@ -512,25 +517,6 @@ button {
   margin-top: 40px;
 }
 
-@media (min-width: 800px) {
-  .imgProduct {
-    border-radius: 100%;
-    width: 80%;
-  }
-  .productDiv {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .productWrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 .shoes {
   display: flex;
   flex-direction: column;
@@ -582,16 +568,30 @@ button {
   box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
-  padding: 2px 16px;
-}
-
 .cardShoes img {
   width: 100%;
   height: 70%;
 }
 
 @media (min-width: 800px) {
+  .imgProduct {
+    border-radius: 100%;
+    width: 80%;
+  }
+  .productDiv {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .productWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
   .shoes {
     display: flex;
     flex-direction: row;
@@ -701,14 +701,15 @@ button {
 }
 
 html, body {
-  background: #ffffff;
   background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
   background: -moz-linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
-  background-color: #ebebeb;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: black;
   font-family: "poppins", sans-serif;
   height: 100%;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;

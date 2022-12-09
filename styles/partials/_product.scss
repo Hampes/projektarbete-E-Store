@@ -1,5 +1,13 @@
 // MAIN PRODUCTSITE------------------
 
+.productWrap {
+  height: 100%;
+}
+
+.productDiv {
+  
+}
+
 .imgProduct {
   border-radius: 100%;
   width: 100%;
@@ -23,25 +31,7 @@
   margin-top: 40px;
 }
 
-@media (min-width: 800px) {
-  .imgProduct {
-    border-radius: 100%;
-    width: 80%;
-  }
 
-  .productDiv {
-    width: 80%;
-    @include flex(row, space-between, center);
-  }
-
-  .productWrap {
-    @include flex(column, space-around, center);
-  }
-}
-// SLUT MAIN------------------
-
-
-// SKOR-------------------
 
 .shoes {
   @include flex(column, space-around, center);
@@ -93,14 +83,6 @@
 .cardShoes:hover {
   box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
-
-.container {
-  padding: 2px 16px;
-}
-
-
-
-
 .cardShoes img {
   width: 100%;
   height: 70%;
@@ -108,35 +90,58 @@
 
 
 
-
-
-
 @media (min-width: 800px) {
-    .shoes {
-        @include flex(row, center, center);
-        
-        .cardShoes {
-            margin: 35px;
-            width: 300px;
-            height: 500px;
-        }
+  .imgProduct {
+    border-radius: 100%;
+    width: 80%;
+  }
 
-        h2 {
-            font-size: 14px
-         }
-        
-         select {
-            width: 150px;
-            
-         }
-         button {
-            width: 150px;
-            height: 30px;
-            font-size: 10px;
-            background: orange;
-        }
+  .productDiv {
+    width: 80%;
+    height: 100%;
+    @include flex(row, space-between, center);
+  }
+
+  .productWrap {
+    @include flex(column, space-around, center);
+  }
 
 
+  .shoes {
+    @include flex(row, center, center);
+    
+    .cardShoes {
+        margin: 35px;
+        width: 300px;
+        height: 500px;
     }
+
+    h2 {
+        font-size: 14px
+     }
+    
+     select {
+        width: 150px;
+        
+     }
+     button {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        background: orange;
+    }
+
+
 }
+
+
+
+}
+// SLUT MAIN------------------
+
+
+// SKOR-------------------
+
+
+
 
