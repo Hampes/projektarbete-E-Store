@@ -1,12 +1,6 @@
-// MAIN PRODUCTSITE------------------
-
-.productWrap {
-  height: 100%;
-}
-
-.productDiv {
-  
-}
+// .productWrap { 
+//   height: 100%;
+// }
 
 .imgProduct {
   border-radius: 100%;
@@ -15,6 +9,7 @@
 
 .productDiv {
   @include flex(column, flex-start, center);
+
 }
 
 .linkProduct {
@@ -28,14 +23,20 @@
 }
 
 .productTitle {
-  margin-top: 40px;
+  font-family: $fontOne;
+  font-size: 40px;
+  // margin-top: 40px;
+  // margin-bottom: 30px;
 }
-
-
 
 .shoes {
   @include flex(column, space-around, center);
   width: 100%;
+
+  h2 {
+    margin-top: 30px;
+    font-family: $fontOne;
+  }
 }
 
 .cardShoes {
@@ -47,37 +48,35 @@
   margin-bottom: 20px;
   margin-top: 20px;
 
+  h2 {
+    font-size: $sizeCardMobile;
+    margin-top: 0;
+  }
 
- h2 {
-    font-size: 14px
- }
-
- select {
+  select {
     width: 110px;
-    
- }
- button {
+  }
+  button {
     width: 110px;
     font-size: 10px;
     background: orange;
-}
+  }
 
-    .container {
-        @include flex(column, flex-start, center)
-    }
+  .container {
+    @include flex(column, flex-start, center);
+  }
 
-    .pantsProduct {
-        height: 64%;
-    }
-
-    .shirtImg {
+  .pantsProduct {
     height: 64%;
-    }
+  }
 
-    .productImg {
-        height: 64%;
-    }
+  .shirtImg {
+    height: 64%;
+  }
 
+  .productImg {
+    height: 64%;
+  }
 }
 
 .cardShoes:hover {
@@ -87,8 +86,6 @@
   width: 100%;
   height: 70%;
 }
-
-
 
 @media (min-width: 800px) {
   .imgProduct {
@@ -106,42 +103,23 @@
     @include flex(column, space-around, center);
   }
 
-
   .shoes {
     @include flex(row, center, center);
-    
+
     .cardShoes {
-        margin: 35px;
-        width: 300px;
-        height: 500px;
+      margin: 35px;
+      width: 300px;
+      height: 500px;
     }
 
-    h2 {
-        font-size: 14px
-     }
-    
-     select {
-        width: 150px;
-        
-     }
-     button {
-        width: 150px;
-        height: 30px;
-        font-size: 10px;
-        background: orange;
+    select {
+      width: 150px;
     }
-
-
+    button {
+      width: 150px;
+      height: 30px;
+      font-size: 10px;
+      background: orange;
+    }
+  }
 }
-
-
-
-}
-// SLUT MAIN------------------
-
-
-// SKOR-------------------
-
-
-
-
