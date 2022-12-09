@@ -219,7 +219,6 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -231,7 +230,7 @@ footer {
 }
 .historia p {
   font-size: 14px;
-  margin: 15px;
+  margin: 25px;
 }
 
 .flip-card-wrapper {
@@ -342,8 +341,10 @@ footer {
   }
 }
 @media (min-width: 800px) {
+  .aboutUl {
+    margin-bottom: 0;
+  }
   .historia h3 {
-    margin-bottom: 10px;
     font-size: 20px;
     text-decoration: underline;
     text-align: center;
@@ -683,15 +684,4 @@ h3 {
   width: 100px;
   position: absolute;
   left: 20px;
-}
-
-.cardProd {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
-  margin: 40px;
-}
-
-.cardProd:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
