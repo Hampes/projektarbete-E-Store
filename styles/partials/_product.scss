@@ -1,6 +1,12 @@
-// .productWrap { 
-//   height: 100%;
-// }
+// MAIN PRODUCTSITE------------------
+
+.productWrap {
+  height: 100%;
+}
+
+.productDiv {
+  
+}
 
 .imgProduct {
   border-radius: 100%;
@@ -58,9 +64,9 @@
   }
   button {
     width: 110px;
-    font-size: 10px;
-    background: orange;
-  }
+    font-size: 11px;
+    background: $buttonColor;
+}
 
   .container {
     @include flex(column, flex-start, center);
@@ -112,14 +118,23 @@
       height: 500px;
     }
 
-    select {
-      width: 150px;
-    }
-    button {
-      width: 150px;
-      height: 30px;
-      font-size: 10px;
-      background: orange;
-    }
-  }
+    h2 {
+        font-size: 14px
+     }
+    
+     select {
+        width: 150px;
+        
+     }
+     button {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        background: $buttonColor;
+     }
+
+}
+
+
+
 }

@@ -1,9 +1,15 @@
 .catchphrase {
   @include flex(row, center, center);
-  font-size: 15px;
+  font-size: 50px;
   text-align: center;
-  font-family: $fontOne;
+  font-family: $fontThree;
+  margin-top: 30px;
 }
+.historyPersonal{
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
 .historia {
   h3 {
     margin-bottom: 10px;
@@ -92,6 +98,8 @@
   height: 100%;
 }
 
+
+
 @media (min-width: 570px) {
   .flip-card-wrapper {
     max-width: 650px;
@@ -148,13 +156,13 @@
   .historia {
     h3 {
       
-      font-size: 20px;
+      font-size: 30px;
       text-decoration: underline;
       text-align: center;
     }
     p {
-      font-size: 14px;
-      margin: 15px;
+      font-size: 20px;
+      margin: 50px;
     }
   }
 

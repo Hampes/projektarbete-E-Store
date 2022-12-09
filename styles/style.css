@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Dosis:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,500;1,400;1,700&family=Rubik+Mono+One&display=swap");
 .homePage {
   font-size: 150%;
   text-decoration: underline;
@@ -61,7 +62,7 @@ header {
 #hamburger-icon div {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -218,9 +219,15 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 50px;
   text-align: center;
-  font-family: "poppins", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
+  margin-top: 30px;
+}
+
+.historyPersonal {
+  margin-top: 20px;
+  text-decoration: underline;
 }
 
 .historia h3 {
@@ -348,13 +355,13 @@ footer {
     margin-bottom: 0;
   }
   .historia h3 {
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: underline;
     text-align: center;
   }
   .historia p {
-    font-size: 14px;
-    margin: 15px;
+    font-size: 20px;
+    margin: 50px;
   }
   .flip-card-wrapper {
     max-width: 1100px;
@@ -448,11 +455,17 @@ button {
 
 button {
   font-weight: bold;
-  background: lightblue;
+  background: peachpuff;
+  border: solid black 1px;
 }
 
 .textarea {
-  height: 250px;
+  height: 350px;
+  width: 300px;
+}
+
+.label {
+  font-size: 20px;
 }
 
 @media (mion-width: 800px) {
@@ -545,8 +558,8 @@ button {
 }
 .cardShoes button {
   width: 110px;
-  font-size: 10px;
-  background: orange;
+  font-size: 11px;
+  background: peachpuff;
 }
 .cardShoes .container {
   display: flex;
@@ -610,7 +623,7 @@ button {
     width: 150px;
     height: 30px;
     font-size: 10px;
-    background: orange;
+    background: peachpuff;
   }
 }
 .recensionerTitle {
