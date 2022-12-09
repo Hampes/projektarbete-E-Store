@@ -1,5 +1,6 @@
 // MAIN PRODUCTSITE------------------
 
+
 .productWrap {
   height: 100%;
 }
@@ -58,8 +59,8 @@
  }
  button {
     width: 110px;
-    font-size: 10px;
-    background: orange;
+    font-size: 11px;
+    background: $buttonColor;
 }
 
     .container {
@@ -128,9 +129,8 @@
         width: 150px;
         height: 30px;
         font-size: 10px;
-        background: orange;
-    }
-
+        background: $buttonColor;
+     }
 
 }
 

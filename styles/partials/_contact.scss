@@ -50,15 +50,22 @@ iframe {
     margin-top: 3px;
     margin-bottom: 3px;
     width: 230px;
+  
   }
   
   button {
     font-weight: bold;
-    background: lightblue;
+    background: $buttonColor;
+    border: solid black 1px;
   }
   
   .textarea {
-    height: 250px;
+    height: 350px;
+    width: 300px;
+  }
+  
+  .label{
+    font-size: 20px;
   }
   
   
