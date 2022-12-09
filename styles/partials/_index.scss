@@ -1,0 +1,31 @@
+.welcomeStart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.startSidaBild{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    align-items: center;
+}
+.welcome{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+
+@media(min-width: 800px){
+    .startSidaBild{
+        width: 500px;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .welcome{
+        font-size: 40px;
+    }
+}
