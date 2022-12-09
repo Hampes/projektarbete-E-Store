@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div id="brand"><img class="logo" src="pics/Logo.png" alt="" /></div>
+      <div id="brand"><img class="logo" src="pics/logo.png" alt="" /></div>
       <nav>
         <ul>
           <li><a href="index.html">Startsida</a></li>
@@ -40,45 +40,73 @@
     </header>
 
     <main>
-      <h2 class="recensionerTitle">Recensioner</h2>
+      
+      <div class="refWrap">
 
+      <h2 class="recensionerTitle">Recensioner</h2>
       <div class="refDiv">
         <div class="firstArrow">
           <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
         </div>
-        <div class="recensDiv">
-          <p class="mySlides">
+        <div class="recensDiv starDiv">
+          <div class="mySlides">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
             ipsum quibusdam, odio fuga, placeat nihil delectus iste, quo sequi
             perspiciatis recusandae tempora aliquid accusantium.
           </p>
-          <p class="mySlides">
+          
+          <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+          </div>
+          <div class="mySlides starDiv">
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam cum,
             sequi nisi quisquam perferendis accusamus sed alias pariatur quod
             doloribus, esse minima error vitae. Voluptates laborum ducimus optio
-            libero quibusdam.
+            libero quibusdam. 
+            
           </p>
-          <p class="mySlides">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            quibusdam, omnis officia qui et sapiente? Voluptates ducimus sit
-            minus incidunt?
-          </p> 
-          <p class="star">&#11088</p>
-          <p class="star">&#11088</p>
-          <p class="star">&#11088</p>
-          <p class="star">&#11088</p>
+          <span class="fa fa-star"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+          <div class="mySlides starDiv">
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              quibusdam, omnis officia qui et sapiente? Voluptates ducimus sit
+              minus incidunt?
+              
+              
+            </p> 
+
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            
+          </div>
         </div>
 
         <div class="secondArrow">
           <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
         </div>
       </div>
+    </div>
     </main>
 
     
       <footer>
         <div class="divFooter">
-          <img class="logoFooter" src="pics/Logo.png" alt="" />
+          <img class="logoFooter" src="pics/logo.png" alt="" />
           <p>© E-STORE 2022</p>
         </div>
 
