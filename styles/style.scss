@@ -8,7 +8,7 @@
 @import "./partials/contact";
 @import "./partials/product";
 @import "./partials/recensioner";
-
+@import "./partials/index";
  
 $fontOne: "poppins", sans-serif;
 $fontTwo: 'Dosis', sans-serif;
@@ -23,6 +23,10 @@ $fontTwo: 'Dosis', sans-serif;
 }
 
 html, body {
+  background: #ffffff;
+background: linear-gradient(180deg,#ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
+background: -webkit-linear-gradient(180deg,#ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
+background: -moz-linear-gradient(180deg,#ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
   background-color: #ebebeb;
   color: black;
   font-family: $fontOne;
