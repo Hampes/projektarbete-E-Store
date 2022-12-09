@@ -8,13 +8,14 @@
   }
   
   .contactMain {
-    margin-top: 40px;
+    margin-top: 50px;
     @include flex(column, space-around, center);
     width: 100%;
+    height: 100%;
   }
   .contactImg {
     @include flex(column, space-around, flex-start);
-    height: 600px;
+    margin-bottom: 30px;
     
   }
 
@@ -59,6 +60,7 @@ iframe {
   .textarea {
     height: 250px;
   }
+  
   
   @media (mion-width: 800px) {
 
