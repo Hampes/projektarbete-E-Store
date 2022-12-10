@@ -2,6 +2,8 @@
 
 .productWrap {
   height: 100%;
+
+  
 }
 
 .productDiv {
@@ -43,6 +45,27 @@
     margin-top: 30px;
     font-family: $fontOne;
   }
+  input,
+  textarea,
+  select,
+  button {
+    border: none;
+    border-radius: 5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 140px;
+    
+    button {
+
+      
+      width: 140px;
+      font-size: 11px;
+      background: $buttonColor;
+    }
+  }
+
 }
 
 .cardShoes {
@@ -59,14 +82,8 @@
     margin-top: 0;
   }
 
-  select {
-    width: 110px;
-  }
-  button {
-    width: 110px;
-    font-size: 11px;
-    background: $buttonColor;
-}
+
+ 
 
   .container {
     @include flex(column, flex-start, center);
@@ -118,20 +135,6 @@
       height: 500px;
     }
 
-    h2 {
-        font-size: 14px
-     }
-    
-     select {
-        width: 150px;
-        
-     }
-     button {
-        width: 150px;
-        height: 30px;
-        font-size: 10px;
-        background: $buttonColor;
-     }
 
 }
 
