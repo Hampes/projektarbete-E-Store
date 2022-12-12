@@ -1,46 +1,78 @@
 .recensionerTitle {
-    font-weight: 400;
-    
-    
+  font-weight: 400;
+}
+
+.refdiv {
+  height: 300px;
+  width: 100%;
+  @include flex(row, space-around, center);
+}
+
+.recensDiv {
+  width: 60%;
+}
+
+.arrowButton {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border: none;
+}
+
+.checked {
+  color: orange;
+}
+
+.fa-star {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.starDiv {
+  margin-top: 20px;
+}
+
+.refWrap {
+  @include flex(column, flex-start, center);
+}
+
+.mySlides {
+  text-align: center;
+  p {
+    font-style: italic
   }
-  
-  .refdiv {
-    height: 300px;
-    width: 100%;
-    @include flex(row, space-around, center);
+}
+
+.inputDiv {
+  @include flex(column, flex-start, flex-start);
+  width: 250px;
+
+  label {
+    width: 250px;
+    margin-bottom: 5px;
   }
-  
-  .recensDiv {
-    width: 60%;
-  }
-  
-  .arrowButton {
-    width: 50px;
-    height: 50px;
-    opacity: 0.5;
+
+  input {
+    width: 250px;
     border: none;
+    height: 30px;
+    margin: 6px 0 6px 0;
+    border-radius: 4px;
   }
 
-  .checked {
-
-    color: orange;
-  }
-
-  .fa-star {
-    font-size: 40px;
-    margin-top: 20px;
-  }
-
-  .starDiv {
-    margin-top: 20px;
+  textarea {
+    border-radius: 4px;
+    width: 250px;
+    height: 100px;
+    border: none;
+    margin: 6px 0 10px 0;
     
   }
+  button {
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
 
-  .refWrap {
-    display: flex;
-    flex-direction: column;
   }
-
-  .mySlides {
-    text-align: center;
-  }
+}

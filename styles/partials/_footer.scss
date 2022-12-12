@@ -1,7 +1,8 @@
 footer {
   height: 200px;
   width: 100%;
-  background-color: grey;
+  color: white;
+  background-color: rgb(87, 87, 87);
   @include flex(row, space-around, flex-start);
   padding: 20px;
  
@@ -9,22 +10,18 @@ footer {
 }
 
 .logoFooter {
-  width: 100px;
+  width: 80px;
 }
 
 .divFooter {
-  @include flex(column, space-around, flex-start);
-  width: 50%;
+  @include flex(column, space-around, center);
+ 
   height: 100%;
-}
 
-.wrapFooter {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .footerlinks {
+  color: white;
   font-size: 80%;
 }
 
@@ -37,15 +34,28 @@ footer {
   footer {
     height: 140px;
     width: 100%;
-    background-color: grey;
     @include flex(row, space-around, flex-start);
     
   }
+  .divFooter {
+    height: 100%;
+    @include flex(column, space-between, flex-start);
+    p{
+      font-size: 12px;
+    }
+  }
   .linkFooter {
-    @include flex(row, space-between, flex-start);
+    margin-top: 10px;
+    height: 100%;
+    @include flex(row, space-between,flex-start);
     font-size: 22px;
     width: 630px;
   }
+
+  .logoFooter {
+    width: 90px;
+  }
+
 
 }
 

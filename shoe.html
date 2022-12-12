@@ -6,38 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="main.js" defer></script>
-    <title>E-store Shoes</title>
-   </head>
-   <body>
     <title>E-store</title>
   </head>
+
   <body>
     <header>
-      <div id="brand"> 
-        <img class="logo" src="pics/logo.png" alt="" /></div>
+      <div class="desktopBrand">
+        <img class="desktopLogo" src="pics/store4.svg" alt="" />
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Startsida</a></li>
-          <li><a class="product" href="productsite.html">Produktsida</a></li>
-          <li><a href="references.html">Referenser</a></li>
+          <li><a class="zoomTitle" href="productsite.html">Produktsida</a></li>
+          <li><a href="references.html">Recensioner</a></li>
           <li><a href="about.html">Om oss</a></li>
           <li><a href="contact.html">Kontakta oss</a></li>
         </ul>
+        <li><a class="cart" href="#">&#128722; (<span class="addProduct">0</span>)</a></li>
       </nav>
       <div class="mobileStartDiv">
-        <h3 class="mobileStart">Skor</h3>
-      </div>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="index.html">Startsida</a></li>
-          <li><a href="productsite.html">Produktsida</a></li>
-          <li><a href="references.html">Referenser</a></li>
-          <li><a href="about.html">Om oss</a></li>
-          <li><a href="contact.html">Kontakta oss</a></li>
-        </ul>
+        <div id="mobileBrand">
+          <a href="index.html"
+            ><img class="mobileLogo" src="pics/store4.svg" alt=""
+          /></a>
+        </div>
+
+        <div>
+          <h3 class="mobileStart">Skor</h3>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="productsite.html">Produktsida</a></li>
+            <li><a href="contact.html">Varukorg (<span class="addProduct">0</span>)</a></li>
+            <li><a href="references.html">Recensioner</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -52,7 +61,7 @@
             <h2>1099:-</h2>
             <p>Adidas NMD_R1</p>
 
-            <select class="sizeShoes">
+            <select>
               <option selected disabled>Välj storlek</option>
               <option>45</option>
               <option>44</option>
@@ -61,14 +70,16 @@
               <option>41</option>
               <option>40</option>
             </select>
-            <select class="colorShoes">
+            <select>
               <option selected disabled>Välj färg</option>
               <option>Black</option>
               <option>White</option>
               <option>Green</option>
               <option>Orange</option>
             </select>
-            <button>&#128722;Lägg till i varukorg</button>
+            <button onclick="myFunction()">
+              &#128722;Lägg till i varukorg
+            </button>
           </div>
         </div>
 
@@ -81,7 +92,7 @@
             <h2>1399:-</h2>
             <p>Nike Air force 1</p>
 
-            <select class="sizeShoes">
+            <select>
               <option selected disabled>Välj storlek</option>
               <option>45</option>
               <option>44</option>
@@ -90,7 +101,7 @@
               <option>40</option>
               <option>38</option>
             </select>
-            <select class="colorShoes">
+            <select>
               <option selected disabled>Välj färg</option>
               <option>Black</option>
               <option>White</option>
@@ -98,7 +109,9 @@
               <option>Blue</option>
             </select>
 
-            <button>&#128722;Lägg till i varukorg</button>
+            <button onclick="myFunction()">
+              &#128722;Lägg till i varukorg
+            </button>
           </div>
         </div>
 
@@ -110,7 +123,7 @@
           <div class="container">
             <h2>999:-</h2>
             <p>Puma Slipstream</p>
-            <select class="sizeShoes">
+            <select>
               <option selected disabled>Välj storlek</option>
               <option>45</option>
               <option>44</option>
@@ -119,7 +132,7 @@
               <option>41</option>
               <option>39</option>
             </select>
-            <select class="colorShoes">
+            <select>
               <option selected disabled>Välj färg</option>
               <option>Black</option>
               <option>White</option>
@@ -127,7 +140,9 @@
               <option>Orange</option>
             </select>
 
-            <button>&#128722;Lägg till i varukorg</button>
+            <button onclick="myFunction()">
+              &#128722;Lägg till i varukorg
+            </button>
           </div>
         </div>
       </div>
@@ -135,7 +150,7 @@
 
     <footer>
       <div class="divFooter">
-        <img class="logoFooter" src="pics/logo.png" alt="" />
+        <img class="logoFooter" src="pics/store4.svg" alt="" />
         <p>© E-STORE 2022</p>
       </div>
 
@@ -145,7 +160,7 @@
           <li>
             <a class="footerlinks" href="productsite.html">Produktsida</a>
           </li>
-          <li><a class="footerlinks" href="references.html">Referenser</a></li>
+          <li><a class="footerlinks" href="references.html">Recensioner</a></li>
           <li><a class="footerlinks" href="about.html">Om oss</a></li>
           <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
         </ul>

@@ -1,111 +1,87 @@
 .container {
-    @include flex(row, center, flex-start);
-  }
-  
-  .contactForm {
-    @include flex(column, space-around, flex-start);
-    height: 400px;
-  }
-  
-  .contactMain {
-    margin-top: 50px;
-    @include flex(column, space-around, center);
-    width: 100%;
-    height: 100%;
+  @include flex(row, center, flex-start);
+}
 
-    button {
-      
-        font-weight: 600;
-        background: $buttonColor;
-    }
+.contactForm {
+  @include flex(column, space-around, flex-start);
+  height: 400px;
+}
 
-    input,
+.contactMain {
+  margin-top: 50px;
+  @include flex(column, space-around, center);
+  width: 100%;
+  height: 100%;
+
+  button {
+    font-weight: 600;
+    background: $buttonColor;
+  }
+
+  input,
   textarea,
   select,
   button {
     border: none;
-    border-radius: 5%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    border-radius: 5px;
+    padding: 3px 0 3px 10px;
+    margin: 3px 0 3px 0;
     width: 230px;
   }
 
+  .textarea {
+    width: 230px;
+    height: 120px
   }
+}
+.contactDiv {
+  @include flex(column, space-around, flex-start);
+  margin-bottom: 30px;
+
   .contactImg {
-    @include flex(column, space-around, flex-start);
+    width: 230px;
+    height: 230px;
     margin-bottom: 30px;
-    
   }
+}
 
-  form {
-    p {
-        font-size: 13px
-    }
+form {
+  p {
+    font-size: 13px;
   }
-
+}
 
 iframe {
-    width: 230px;
-    height: 230px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .mapImg {
-    width: 230px;
-    height: 230px;
-    margin-bottom: 30px;
-  }
-  
-  
-  
- 
-  
-  .textarea {
-    height: 350px;
-    width: 230px;
-  }
-  
-  .label{
-    font-size: 20px;
-  }
-  
-  
-  @media (mion-width: 800px) {
+  margin-top: 30px;
+}
+.label {
+  font-size: 20px;
+}
 
-    iframe {
-        width: 250px;
-        height: 250px;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    
-      .mapImg {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 0;
-      }
-
-
-  }
-  
-  
-  @media (min-width: 900px) {
-    .contactMain {
-      margin-top: 40px;
-      @include flex(row, space-evenly, center);
+@media (min-width: 800px) {
+  .contactDiv {
+    .contactImg {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 0;
     }
-    iframe {
-      width: 300px;
-      height: 300px;
-    }
-  
-    .mapImg {
+  }
+
+  iframe {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .contactDiv {
+    .contactImage {
       width: 300px;
       height: 300px;
     }
   }
 
-
+  .contactMain {
+    margin-top: 40px;
+    @include flex(row, space-evenly, center);
+  }
+}

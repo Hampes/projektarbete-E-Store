@@ -1,4 +1,10 @@
 // ---------HEADER-----------
+
+.zoomTitle {
+  @include highlight();
+
+}
+
 .homePage {
   @include highlight();
 }
@@ -20,11 +26,12 @@
 }
 
 header {
+  border-bottom: 1px solid lightgrey;
   font-family: $fontOne;
   padding: 0 20px;
-  background-color: #ebebeb;
+  // background-color: #ebebeb;
   color: #222;
-  height: 50px;
+  height: 60px;
   @include flex(row, space-around, flex-start);
 
   a {
@@ -32,15 +39,35 @@ header {
   }
 }
 
+
+
+
+.desktopBrand {
+  display: none;
+  
+}
+
 .mobileStartDiv {
   width: 100%;
-  @include flex(row, center, flex-start);
-  position: relative;
-  left: 2%;
+  @include flex(row, space-between, center);
+  
+}
+
+.mobileLogo {
+  width: 60px;
+  height: 60px;
+  
+  
+}
+
+.mobileBrand {
+ 
+width: 50px;
+height: 50px;
 }
 
 #hamburger-icon {
-  margin: auto 0;
+  margin: auto 15px;
   display: none;
   cursor: pointer;
 }
@@ -67,7 +94,6 @@ ul {
   }
   li {
     padding: 5px;
-    margin-left: 10px;
   }
 
   li:hover {
@@ -85,8 +111,8 @@ ul {
     opacity: 0;
   }
   .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 
   .mobile-menu {
@@ -97,10 +123,10 @@ ul {
 .mobile-menu {
   display: none;
   position: absolute;
-  background: #888888;
-  top: 50px;
+  background: rgb(146, 146, 146);
+  top: 60px;
   left: 0;
-  height: 250px;
+  height: 270px;
   width: 100%;
   z-index: 3;
 }
@@ -125,20 +151,29 @@ h2 {
 
 @media (min-width: 800px) {
   header {
+    height: 70px;
     @include flex(row, center, flex-start);
     nav {
+      height: 70px;
       display: block;
     }
-  }
-
-  #hamburger-icon {
-    display: none;
-  }
-  .mobileStart {
-    display: none;
   }
 
   .mobileStartDiv {
     display: none;
   }
+  .desktopBrand {
+    display: block;
+    width: 55px;
+  position: absolute;
+  left: 20px
+  }
+
+  .desktopLogo {
+    width: 65px;
+
+  }
+
+
 }
+

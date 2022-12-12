@@ -10,9 +10,7 @@
 
 html,
 body {
-  color: black;
   font-family: "poppins", sans-serif;
-  font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
   background: -moz-linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
   height: 100%;
@@ -20,7 +18,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: black;
-  font-family: "poppins", sans-serif;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -33,15 +30,19 @@ h3 {
   font-family: "Dosis", sans-serif;
 }
 
-.logo {
-  width: 100px;
+.cart {
+  font-size: 25px;
   position: absolute;
-  left: 20px;
+  right: 30px;
+  top: 20px;
 }
 
-#brand {
-  width: 100px;
-  height: 50px;
+nav {
+  list-style-type: none;
+}
+.zoomTitle {
+  font-size: 150%;
+  text-decoration: underline;
 }
 
 .homePage {
@@ -70,11 +71,11 @@ h3 {
 }
 
 header {
+  border-bottom: 1px solid lightgrey;
   font-family: "poppins", sans-serif;
   padding: 0 20px;
-  background-color: #ebebeb;
   color: #222;
-  height: 50px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -84,18 +85,30 @@ header a {
   text-decoration: none;
 }
 
+.desktopBrand {
+  display: none;
+}
+
 .mobileStartDiv {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  left: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileLogo {
+  width: 60px;
+  height: 60px;
+}
+
+.mobileBrand {
+  width: 50px;
+  height: 50px;
 }
 
 #hamburger-icon {
-  margin: auto 0;
+  margin: auto 15px;
   display: none;
   cursor: pointer;
 }
@@ -122,7 +135,6 @@ ul a {
 }
 ul li {
   padding: 5px;
-  margin-left: 10px;
 }
 ul li:hover {
   transform: scale(1.1);
@@ -136,7 +148,7 @@ ul li:hover {
   opacity: 0;
 }
 .open .bar3 {
-  transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 .open .mobile-menu {
   display: flex;
@@ -148,10 +160,10 @@ ul li:hover {
 .mobile-menu {
   display: none;
   position: absolute;
-  background: #888888;
-  top: 50px;
+  background: rgb(146, 146, 146);
+  top: 60px;
   left: 0;
-  height: 250px;
+  height: 270px;
   width: 100%;
   z-index: 3;
 }
@@ -174,28 +186,34 @@ h2 {
 
 @media (min-width: 800px) {
   header {
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
   header nav {
+    height: 70px;
     display: block;
-  }
-  #hamburger-icon {
-    display: none;
-  }
-  .mobileStart {
-    display: none;
   }
   .mobileStartDiv {
     display: none;
+  }
+  .desktopBrand {
+    display: block;
+    width: 55px;
+    position: absolute;
+    left: 20px;
+  }
+  .desktopLogo {
+    width: 65px;
   }
 }
 footer {
   height: 200px;
   width: 100%;
-  background-color: grey;
+  color: white;
+  background-color: rgb(87, 87, 87);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -204,25 +222,19 @@ footer {
 }
 
 .logoFooter {
-  width: 100px;
+  width: 80px;
 }
 
 .divFooter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  width: 50%;
+  align-items: center;
   height: 100%;
 }
 
-.wrapFooter {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .footerlinks {
+  color: white;
   font-size: 80%;
 }
 
@@ -237,19 +249,33 @@ footer {
   footer {
     height: 140px;
     width: 100%;
-    background-color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
+  .divFooter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .divFooter p {
+    font-size: 12px;
+  }
   .linkFooter {
+    margin-top: 10px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     font-size: 22px;
     width: 630px;
+  }
+  .logoFooter {
+    width: 90px;
   }
 }
 .catchphrase {
@@ -461,19 +487,26 @@ footer {
 .contactMain select,
 .contactMain button {
   border: none;
-  border-radius: 5%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  border-radius: 5px;
+  padding: 3px 0 3px 10px;
+  margin: 3px 0 3px 0;
   width: 230px;
 }
+.contactMain .textarea {
+  width: 230px;
+  height: 120px;
+}
 
-.contactImg {
+.contactDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 30px;
+}
+.contactDiv .contactImg {
+  width: 230px;
+  height: 230px;
   margin-bottom: 30px;
 }
 
@@ -482,55 +515,34 @@ form p {
 }
 
 iframe {
-  width: 230px;
-  height: 230px;
   margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.mapImg {
-  width: 230px;
-  height: 230px;
-  margin-bottom: 30px;
-}
-
-.textarea {
-  height: 350px;
-  width: 230px;
 }
 
 .label {
   font-size: 20px;
 }
 
-@media (mion-width: 800px) {
-  iframe {
+@media (min-width: 800px) {
+  .contactDiv .contactImg {
     width: 250px;
     height: 250px;
-    margin-top: 0;
     margin-bottom: 0;
   }
-  .mapImg {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 0;
+  iframe {
+    margin-top: 0;
   }
 }
 @media (min-width: 900px) {
+  .contactDiv .contactImage {
+    width: 300px;
+    height: 300px;
+  }
   .contactMain {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
-  iframe {
-    width: 300px;
-    height: 300px;
-  }
-  .mapImg {
-    width: 300px;
-    height: 300px;
   }
 }
 .productWrap {
@@ -562,6 +574,8 @@ iframe {
 .productTitle {
   font-family: "poppins", sans-serif;
   font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .shoes {
@@ -575,23 +589,15 @@ iframe {
   margin-top: 30px;
   font-family: "poppins", sans-serif;
 }
-.shoes input,
-.shoes textarea,
 .shoes select,
 .shoes button {
   border: none;
-  border-radius: 5%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  border-radius: 5px;
+  height: 23px;
+  margin: 3px 0 3px 0;
   width: 140px;
 }
-.shoes input button,
-.shoes textarea button,
-.shoes select button,
-.shoes button button {
-  width: 140px;
+.shoes button {
   font-size: 11px;
   background: peachpuff;
 }
@@ -605,12 +611,15 @@ iframe {
   align-items: center;
   height: 400px;
   width: 200px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 .cardShoes h2 {
   font-size: 16px;
   margin-top: 0;
+}
+.cardShoes img {
+  width: 100%;
+  height: 64%;
 }
 .cardShoes .container {
   display: flex;
@@ -618,28 +627,13 @@ iframe {
   justify-content: flex-start;
   align-items: center;
 }
-.cardShoes .pantsProduct {
-  height: 64%;
-}
-.cardShoes .shirtImg {
-  height: 64%;
-}
-.cardShoes .productImg {
-  height: 64%;
-}
 
 .cardShoes:hover {
   box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cardShoes img {
-  width: 100%;
-  height: 70%;
-}
-
 @media (min-width: 800px) {
   .imgProduct {
-    border-radius: 100%;
     width: 80%;
   }
   .productDiv {
@@ -661,6 +655,14 @@ iframe {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  .shoes select,
+.shoes button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 3px 0 3px 0;
+    width: 180px;
   }
   .shoes .cardShoes {
     margin: 35px;
@@ -708,18 +710,55 @@ iframe {
 .refWrap {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .mySlides {
   text-align: center;
 }
+.mySlides p {
+  font-style: italic;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
+}
+.inputDiv label {
+  width: 250px;
+  margin-bottom: 5px;
+}
+.inputDiv input {
+  width: 250px;
+  border: none;
+  height: 30px;
+  margin: 6px 0 6px 0;
+  border-radius: 4px;
+}
+.inputDiv textarea {
+  border-radius: 4px;
+  width: 250px;
+  height: 100px;
+  border: none;
+  margin: 6px 0 10px 0;
+}
+.inputDiv button {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+}
 
 .welcomeStart {
   display: flex;
-  width: 100%;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
 }
 
@@ -727,13 +766,14 @@ iframe {
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  align-items: center;
 }
 
 .welcome {
+  font-family: "Dosis", sans-serif;
   font-size: 30px;
   margin-bottom: 60px;
   text-decoration: underline;
+  font-weight: 400;
 }
 
 @media (min-width: 800px) {

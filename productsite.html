@@ -10,38 +10,49 @@
   </head>
   <body>
     <header>
-      <div id="brand"><img class="logo" src="pics/logo.png" alt="" /></div>
+      <div class="desktopBrand">
+        <img class="desktopLogo" src="pics/store4.svg" alt="" />
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Startsida</a></li>
-          <li><a class="product" href="productsite.html">Produktsida</a></li>
-          <li><a href="references.html">Referenser</a></li>
+          <li><a class="zoomTitle" href="productsite.html">Produktsida</a></li>
+          
+          <li><a href="references.html">Recensioner</a></li>
           <li><a href="about.html">Om oss</a></li>
           <li><a href="contact.html">Kontakta oss</a></li>
         </ul>
+        <li><a class="cart" href="contact.html">&#128722; (<span class="addProduct">0</span>)</a></li>
       </nav>
-
       <div class="mobileStartDiv">
-        <h3 class="mobileStart">Produktsida</h3>
-      </div>
+        <div id="mobileBrand">
+          <a href="index.html"
+            ><img class="mobileLogo" src="pics/store4.svg" alt=""
+          /></a>
+        </div>
 
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="index.html">Startsida</a></li>
-          <li><a href="productsite.html">Produktsida</a></li>
-          <li><a href="references.html">Referenser</a></li>
-          <li><a href="about.html">Om oss</a></li>
-          <li><a href="contact.html">Kontakta oss</a></li>
-        </ul>
+        <div>
+          <h3 class="mobileStart">Produktsida</h3>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="productsite.html">Produktsida</a></li>
+            <li><a href="contact.html">Varukorg (<span class="addProduct">0</span>)</a></li>
+            <li><a href="references.html">Recensioner</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <div class="productWrap">
-        <h2 class="productTitle">Produkter</h2>
+        <!-- <h2 class="productTitle">Produkter</h2> -->
 
         <div class="productDiv">
           <a class="linkProduct" href="pants.html">
@@ -61,12 +72,14 @@
             <h4>Jackor</h4>
           </a>
         </div>
+        
       </div>
+
     </main>
 
     <footer>
       <div class="divFooter">
-        <img class="logoFooter" src="pics/logo.png" alt="" />
+        <img class="logoFooter" src="pics/store4.svg" alt="" />
         <p>© E-STORE 2022</p>
       </div>
 
@@ -76,7 +89,7 @@
           <li>
             <a class="footerlinks" href="productsite.html">Produktsida</a>
           </li>
-          <li><a class="footerlinks" href="references.html">Referenser</a></li>
+          <li><a class="footerlinks" href="references.html">Recensioner</a></li>
           <li><a class="footerlinks" href="about.html">Om oss</a></li>
           <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
         </ul>
