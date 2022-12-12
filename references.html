@@ -1,154 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="main.js" defer></script>
     <title>E-Store</title>
   </head>
   <body>
     <header>
-        <div class="desktopBrand"><a href="index.html">
-          <img class="desktopLogo" src="pics/store4.svg" alt=""></a>
-        </div>
-      
+      <div class="desktopBrand">
+        <a href="index.html">
+          <img class="desktopLogo" src="pics/store4.svg" alt=""
+        /></a>
+      </div>
+
       <nav>
-          <ul>
-              <li><a href="index.html">Startsida</a></li>
-              <li><a  href="productsite.html">Produktsida</a></li>
-              <li><a class="zoomTitle" href="references.html">Recensioner</a></li>
-              <li><a href="about.html">Om oss</a></li>
-              <li><a href="contact.html">Kontakta oss</a></li>
-            </ul>
-            <ul>
-
-              <li><a class="cart" href="contact.html">&#128722; (<span class="addProduct">0</span>)</a></li>
-            </ul>
-        </nav>
-        <div class="mobileStartDiv">
-          <div id="mobileBrand">
-            <a href="index.html"><img class="mobileLogo" src="pics/store4.svg" alt=""></a></div>
-
-
-            <div>
-
-              <h3 class="mobileStart">Recensioner</h3>
-            </div>
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-              
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-              <ul class="mobile-menu">
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="productsite.html">Produktsida</a></li>
-                <li><a href="contact.html">Varukorg (<span class="addProduct">0</span>)</a></li>
-                <li><a href="references.html">Recensioner</a></li>
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="contact.html">Kontakta oss</a></li>
-              </ul>
-            </div>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="productsite.html">Produktsida</a></li>
+          <li><a class="zoomTitle" href="references.html">Recensioner</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+        <a class="cart" href="#">&#128722; (<span class="addProduct">0</span>)</a>
+      </nav>
+      <div class="mobileStartDiv">
+        <div id="mobileBrand">
+          <a href="index.html"
+            ><img class="mobileLogo" src="pics/store4.svg" alt=""
+          /></a>
         </div>
+
+        <div>
+          <h3 class="mobileStart">Recensioner</h3>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="productsite.html">Produktsida</a></li>
+            <li>
+              <a href="contact.html"
+                >Varukorg (<span class="addProduct">0</span>)</a
+              >
+            </li>
+            <li><a href="references.html">Recensioner</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      
       <div class="refWrap">
-
-      <!-- <h2 class="recensionerTitle">Recensioner</h2> -->
-      <div class="refDiv">
-        <div class="firstArrow">
-          <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
-        </div>
-        <div class="recensDiv starDiv">
-          <div class="mySlides">
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            ipsum quibusdam, odio fuga, placeat nihil delectus iste, quo sequi
-            perspiciatis recusandae tempora aliquid accusantium."
-          </p>
-          
-          <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-
+        <!-- <h2 class="recensionerTitle">Recensioner</h2> -->
+        <div class="refDiv">
+          <div class="firstArrow">
+            <button class="arrowButton" onclick="plusDivs(-1)">&#10094;</button>
           </div>
-          <div class="mySlides starDiv"><br>
-            <h2>Ludvig Persson</h2>
-          <p>
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam cum,
-            sequi nisi quisquam perferendis accusamus sed alias pariatur quod
-            doloribus, esse minima error vitae. Voluptates laborum ducimus optio
-            libero quibusdam."
-            
-          </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-        </div>
-          <div class="mySlides starDiv">
+          <div class="recensDiv starDiv">
+            <div class="mySlides">
+              <h2>Anders Andersson</h2>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati ipsum quibusdam, odio fuga, placeat nihil delectus
+                iste, quo sequi perspiciatis recusandae tempora aliquid
+                accusantium."
+              </p>
 
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-              quibusdam, omnis officia qui et sapiente? Voluptates ducimus sit
-              minus incidunt?""
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="mySlides starDiv">
               
-              
-            </p> 
+              <h2>Carl Carlsson</h2>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                cum, sequi nisi quisquam perferendis accusamus sed alias
+                pariatur quod doloribus, esse minima error vitae. Voluptates
+                laborum ducimus optio libero quibusdam."
+              </p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="mySlides starDiv">
+              <h2>Erik Eriksson</h2>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quibusdam, omnis officia qui et sapiente? Voluptates ducimus sit
+                minus incidunt?""
+              </p>
 
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+
+          <div class="secondArrow">
+            <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
           </div>
         </div>
 
-        <div class="secondArrow">
-          <button class="arrowButton" onclick="plusDivs(1)">&#10095;</button>
-        </div>
+        <form>
+          <div class="inputDiv">
+            <label>Skriv din recension</label>
+            <input type="text" placeholder="Namn" />
+            <textarea></textarea>
+            <button>Skicka</button>
+          </div>
+        </form>
       </div>
-      
-      <form>
-      <div class="inputDiv">
-
-        <label>Skriv din recension</label>
-        <input type="text" placeholder="Namn">
-          <textarea></textarea>
-          <button>Skicka</button>
-        </div>
-      </form>
-
-    </div>
     </main>
 
-    
     <footer>
       <div class="divFooter">
-          <img class="logoFooter" src="pics/store4.svg" alt="">
-          <p>© E-STORE 2022</p>
+        <img class="logoFooter" src="pics/store4.svg" alt="" />
+        <p>© E-STORE 2022</p>
       </div>
 
       <div class="linkFooter">
-          <ul class="linkFooter">
-              <li><a class="footerlinks" href="index.html">Startsida</a></li>
-              <li><a class="footerlinks" href="productsite.html">Produktsida</a></li>
-              <li><a class="footerlinks" href="references.html">Recensioner</a></li>
-              <li><a class="footerlinks" href="about.html">Om oss</a></li>
-              <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
-          </ul>
+        <ul class="linkFooter">
+          <li><a class="footerlinks" href="index.html">Startsida</a></li>
+          <li>
+            <a class="footerlinks" href="productsite.html">Produktsida</a>
+          </li>
+          <li><a class="footerlinks" href="references.html">Recensioner</a></li>
+          <li><a class="footerlinks" href="about.html">Om oss</a></li>
+          <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
+        </ul>
       </div>
-
-
-</footer>
-    
+    </footer>
   </body>
 </html>
