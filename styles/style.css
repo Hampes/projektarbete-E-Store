@@ -1,7 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,500;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Dosis:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,500;1,400;1,700&family=Rubik+Mono+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "poppins", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
+  background: -moz-linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+}
+
+.cart {
+  font-size: 25px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+nav {
+  list-style-type: none;
+}
+.zoomTitle {
+  font-size: 150%;
+  text-decoration: underline;
+}
+
 .homePage {
   font-size: 150%;
   text-decoration: underline;
@@ -27,34 +70,45 @@
   text-decoration: underline;
 }
 
+header {
+  border-bottom: 1px solid lightgrey;
+  font-family: "poppins", sans-serif;
+  padding: 0 20px;
+  color: #222;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 header a {
   text-decoration: none;
+}
+
+.desktopBrand {
+  display: none;
 }
 
 .mobileStartDiv {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  left: 2%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header {
-  font-family: "poppins", sans-serif;
-  padding: 0 20px;
-  background-color: #ebebeb;
-  color: #222;
+.mobileLogo {
+  width: 60px;
+  height: 60px;
+}
+
+.mobileBrand {
+  width: 50px;
   height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 
 #hamburger-icon {
-  margin: auto 0;
+  margin: auto 15px;
   display: none;
   cursor: pointer;
 }
@@ -62,7 +116,7 @@ header {
 #hamburger-icon div {
   width: 30px;
   height: 2px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -79,12 +133,9 @@ ul {
 ul a {
   color: #222;
 }
-
 ul li {
   padding: 5px;
-  margin-left: 10px;
 }
-
 ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
@@ -93,15 +144,12 @@ ul li:hover {
 .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-
 .open .bar2 {
   opacity: 0;
 }
-
 .open .bar3 {
-  transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
-
 .open .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -112,10 +160,10 @@ ul li:hover {
 .mobile-menu {
   display: none;
   position: absolute;
-  background: #888888;
-  top: 50px;
+  background: rgb(146, 146, 146);
+  top: 60px;
   left: 0;
-  height: 250px;
+  height: 270px;
   width: 100%;
   z-index: 3;
 }
@@ -137,29 +185,35 @@ h2 {
 }
 
 @media (min-width: 800px) {
-  header nav {
-    display: block;
-  }
-  #hamburger-icon {
-    display: none;
-  }
-  .mobileStart {
-    display: none;
-  }
-  .mobileStartDiv {
-    display: none;
-  }
   header {
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
+  header nav {
+    height: 70px;
+    display: block;
+  }
+  .mobileStartDiv {
+    display: none;
+  }
+  .desktopBrand {
+    display: block;
+    width: 55px;
+    position: absolute;
+    left: 20px;
+  }
+  .desktopLogo {
+    width: 65px;
+  }
 }
 footer {
   height: 200px;
   width: 100%;
-  background-color: grey;
+  color: white;
+  background-color: rgb(87, 87, 87);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -168,25 +222,19 @@ footer {
 }
 
 .logoFooter {
-  width: 100px;
+  width: 80px;
 }
 
 .divFooter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  width: 50%;
+  align-items: center;
   height: 100%;
 }
 
-.wrapFooter {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .footerlinks {
+  color: white;
   font-size: 80%;
 }
 
@@ -201,19 +249,33 @@ footer {
   footer {
     height: 140px;
     width: 100%;
-    background-color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
   }
+  .divFooter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .divFooter p {
+    font-size: 12px;
+  }
   .linkFooter {
+    margin-top: 10px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     font-size: 22px;
     width: 630px;
+  }
+  .logoFooter {
+    width: 90px;
   }
 }
 .catchphrase {
@@ -416,12 +478,35 @@ footer {
   width: 100%;
   height: 100%;
 }
+.contactMain button {
+  font-weight: 600;
+  background: peachpuff;
+}
+.contactMain input,
+.contactMain textarea,
+.contactMain select,
+.contactMain button {
+  border: none;
+  border-radius: 5px;
+  padding: 3px 0 3px 10px;
+  margin: 3px 0 3px 0;
+  width: 230px;
+}
+.contactMain .textarea {
+  width: 230px;
+  height: 120px;
+}
 
-.contactImg {
+.contactDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 30px;
+}
+.contactDiv .contactImg {
+  width: 230px;
+  height: 230px;
   margin-bottom: 30px;
 }
 
@@ -430,74 +515,34 @@ form p {
 }
 
 iframe {
-  width: 230px;
-  height: 230px;
   margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.mapImg {
-  width: 230px;
-  height: 230px;
-  margin-bottom: 30px;
-}
-
-input,
-textarea,
-select,
-button {
-  border: none;
-  border-radius: 5%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  width: 230px;
-}
-
-button {
-  font-weight: bold;
-  background: peachpuff;
-  border: solid black 1px;
-}
-
-.textarea {
-  height: 350px;
-  width: 300px;
 }
 
 .label {
   font-size: 20px;
 }
 
-@media (mion-width: 800px) {
-  iframe {
+@media (min-width: 800px) {
+  .contactDiv .contactImg {
     width: 250px;
     height: 250px;
-    margin-top: 0;
     margin-bottom: 0;
   }
-  .mapImg {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 0;
+  iframe {
+    margin-top: 0;
   }
 }
 @media (min-width: 900px) {
+  .contactDiv .contactImage {
+    width: 300px;
+    height: 300px;
+  }
   .contactMain {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
-  iframe {
-    width: 300px;
-    height: 300px;
-  }
-  .mapImg {
-    width: 300px;
-    height: 300px;
   }
 }
 .productWrap {
@@ -527,7 +572,10 @@ button {
 }
 
 .productTitle {
+  font-family: "poppins", sans-serif;
+  font-size: 40px;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .shoes {
@@ -536,6 +584,22 @@ button {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+.shoes h2 {
+  margin-top: 30px;
+  font-family: "poppins", sans-serif;
+}
+.shoes select,
+.shoes button {
+  border: none;
+  border-radius: 5px;
+  height: 23px;
+  margin: 3px 0 3px 0;
+  width: 140px;
+}
+.shoes button {
+  font-size: 11px;
+  background: peachpuff;
 }
 
 .cardShoes {
@@ -547,19 +611,15 @@ button {
   align-items: center;
   height: 400px;
   width: 200px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 .cardShoes h2 {
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 0;
 }
-.cardShoes select {
-  width: 110px;
-}
-.cardShoes button {
-  width: 110px;
-  font-size: 11px;
-  background: peachpuff;
+.cardShoes img {
+  width: 100%;
+  height: 64%;
 }
 .cardShoes .container {
   display: flex;
@@ -567,28 +627,13 @@ button {
   justify-content: flex-start;
   align-items: center;
 }
-.cardShoes .pantsProduct {
-  height: 64%;
-}
-.cardShoes .shirtImg {
-  height: 64%;
-}
-.cardShoes .productImg {
-  height: 64%;
-}
 
 .cardShoes:hover {
   box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cardShoes img {
-  width: 100%;
-  height: 70%;
-}
-
 @media (min-width: 800px) {
   .imgProduct {
-    border-radius: 100%;
     width: 80%;
   }
   .productDiv {
@@ -611,22 +656,18 @@ button {
     justify-content: center;
     align-items: center;
   }
+  .shoes select,
+.shoes button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 3px 0 3px 0;
+    width: 180px;
+  }
   .shoes .cardShoes {
     margin: 35px;
     width: 300px;
     height: 500px;
-  }
-  .shoes h2 {
-    font-size: 14px;
-  }
-  .shoes select {
-    width: 150px;
-  }
-  .shoes button {
-    width: 150px;
-    height: 30px;
-    font-size: 10px;
-    background: peachpuff;
   }
 }
 .recensionerTitle {
@@ -669,18 +710,55 @@ button {
 .refWrap {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .mySlides {
   text-align: center;
 }
+.mySlides p {
+  font-style: italic;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 250px;
+}
+.inputDiv label {
+  width: 250px;
+  margin-bottom: 5px;
+}
+.inputDiv input {
+  width: 250px;
+  border: none;
+  height: 30px;
+  margin: 6px 0 6px 0;
+  border-radius: 4px;
+}
+.inputDiv textarea {
+  border-radius: 4px;
+  width: 250px;
+  height: 100px;
+  border: none;
+  margin: 6px 0 10px 0;
+}
+.inputDiv button {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+}
 
 .welcomeStart {
   display: flex;
-  width: 100%;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
 }
 
@@ -688,13 +766,14 @@ button {
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  align-items: center;
 }
 
 .welcome {
+  font-family: "Dosis", sans-serif;
   font-size: 30px;
   margin-bottom: 60px;
   text-decoration: underline;
+  font-weight: 400;
 }
 
 @media (min-width: 800px) {
@@ -706,40 +785,4 @@ button {
   .welcome {
     font-size: 40px;
   }
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  color: black;
-  font-family: "poppins", sans-serif;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-  font-family: "poppins", sans-serif;
-  height: 100%;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Dosis", sans-serif;
-}
-
-.logo {
-  width: 100px;
-  position: absolute;
-  left: 20px;
 }/*# sourceMappingURL=style.css.map */

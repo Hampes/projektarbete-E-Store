@@ -1,12 +1,7 @@
 // MAIN PRODUCTSITE------------------
 
-
 .productWrap {
   height: 100%;
-}
-
-.productDiv {
-  
 }
 
 .imgProduct {
@@ -29,14 +24,33 @@
 }
 
 .productTitle {
+  font-family: $fontOne;
+  font-size: 40px;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
-
-
 
 .shoes {
   @include flex(column, space-around, center);
   width: 100%;
+
+  h2 {
+    margin-top: 30px;
+    font-family: $fontOne;
+  }
+
+  select,
+  button {
+    border: none;
+    border-radius: 5px;
+    height: 23px;
+    margin: 3px 0 3px 0;
+    width: 140px;
+  }
+  button {
+    font-size: 11px;
+    background: $buttonColor;
+  }
 }
 
 .cardShoes {
@@ -45,55 +59,32 @@
   @include flex(column, flex-start, center);
   height: 400px;
   width: 200px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 
+  h2 {
+    font-size: $sizeCardMobile;
+    margin-top: 0;
+  }
 
- h2 {
-    font-size: 14px
- }
-
- select {
-    width: 110px;
-    
- }
- button {
-    width: 110px;
-    font-size: 11px;
-    background: $buttonColor;
-}
-
-    .container {
-        @include flex(column, flex-start, center)
-    }
-
-    .pantsProduct {
-        height: 64%;
-    }
-
-    .shirtImg {
+  img {
+    width: 100%;
     height: 64%;
-    }
+  }
 
-    .productImg {
-        height: 64%;
-    }
-
+  .container {
+    @include flex(column, flex-start, center);
+  }
 }
 
 .cardShoes:hover {
   box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.2);
 }
-.cardShoes img {
-  width: 100%;
-  height: 70%;
-}
-
-
 
 @media (min-width: 800px) {
+
+
+
   .imgProduct {
-    border-radius: 100%;
     width: 80%;
   }
 
@@ -107,41 +98,22 @@
     @include flex(column, space-around, center);
   }
 
-
   .shoes {
     @include flex(row, center, center);
-    
+
+    select,
+  button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 3px 0 3px 0;
+    width: 180px;
+  }
+
     .cardShoes {
-        margin: 35px;
-        width: 300px;
-        height: 500px;
+      margin: 35px;
+      width: 300px;
+      height: 500px;
     }
-
-    h2 {
-        font-size: 14px
-     }
-    
-     select {
-        width: 150px;
-        
-     }
-     button {
-        width: 150px;
-        height: 30px;
-        font-size: 10px;
-        background: $buttonColor;
-     }
-
+  }
 }
-
-
-
-}
-// SLUT MAIN------------------
-
-
-// SKOR-------------------
-
-
-
-

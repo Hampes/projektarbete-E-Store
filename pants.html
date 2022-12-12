@@ -1,59 +1,71 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="main.js"></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="main.js" defer></script>
     <title>E-store pants</title>
-   </head>
-   <body>
+  </head>
+  <body>
     <header>
-        <div id="brand"><img class="logo" src="pics/logo.png" alt=""></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a class="product" href="productsite.html">Produktsida</a></li>
-                <li><a href="references.html">Referenser</a></li>
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="contact.html">Kontakta oss</a></li>
-              </ul>
-          </nav>
-          <div class="mobileStartDiv">
+      <div class="desktopBrand">
+        <img class="desktopLogo" src="pics/store4.svg" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a class="zoomTitle" href="productsite.html">Produktsida</a></li>
+          <li><a href="references.html">Recensioner</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+        <li><a class="cart" href="contact.html">&#128722; (<span class="addProduct">0</span>)</a></li>
+      </nav>
+      <div class="mobileStartDiv">
+        <div id="mobileBrand">
+          <a href="index.html"
+            ><img class="mobileLogo" src="pics/store4.svg" alt=""
+          /></a>
+        </div>
 
-            <h3 class="mobileStart">Byxor</h3>
-          </div>
-          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-              
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-              <ul class="mobile-menu">
-                  <li><a href="index.html">Startsida</a></li>
-                  <li><a href="productsite.html">Produktsida</a></li>
-                  <li><a href="references.html">Referenser</a></li>
-                  <li><a href="about.html">Om oss</a></li>
-                  <li><a href="contact.html">Kontakta oss</a></li>
-              </ul>
-          </div>
-      </header>
-      <main>
-
-      
-      
+        <div>
+          <h3 class="mobileStart">Byxor</h3>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="productsite.html">Produktsida</a></li>
+            <li>
+              <a href="contact.html"
+                >Varukorg (<span class="addProduct">0</span>)</a
+              >
+            </li>
+            <li><a href="references.html">Recensioner</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Byxor</h2>
       <div class="shoes">
         <div class="cardShoes">
-          <img src="pics/byxor1.png" alt="En bild på ett par beige cargobyxor" class="productImg">
+          <img
+            src="pics/byxor1.png"
+            alt="En bild på ett par beige cargobyxor"
+            class="productImg"
+          />
           <div class="container">
-              <h2>499:-</h2>
-            <p>Cargo Pants</p> 
-           
-                
-            <select class="sizePants"> 
+            <h2>499:-</h2>
+            <p>Cargo Pants</p>
+
+            <select class="sizePants">
               <option selected disabled>Välj storlek</option>
               <option>XL</option>
               <option>L</option>
@@ -64,89 +76,94 @@
             <select class="colorPants">
               <option selected disabled>Välj färg</option>
               <option>Black</option>
-              <option>beige</option>
+              <option>Beige</option>
               <option>Grey</option>
             </select>
-            <div class="buyBtn">
-              <button>&#128722;Lägg till i varukorg</button>
-            </div>
-        
-         
-        </div>
-        </div>
-  
-        <div class="cardShoes">
-          <img src="pics/byxor2.png" alt="En bild på ett par chinos med rutor" class="productImg">
-          <div class="container">
-              <h2>799:-</h2>
-            <p>Chinos</p> 
-          
-            
-              <select class="sizePants"> 
-                <option selected disabled>Välj storlek</option>
-                <option>XL</option>
-                <option>L</option>
-                <option>M</option>
-                <option>S</option>
-              </select>
-              <select class="colorPants">
-                <option selected disabled>Välj färg</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Grey</option>
-                <option>Navy Blue</option>
-              </select>
-              <div class="buyBtn">
-                <button>&#128722;Lägg till i varukorg</button>
-              </div>
-            </div>
+
+            <button onclick="myFunction()">
+              &#128722;Lägg till i varukorg
+            </button>
           </div>
-        
-  
-          <div class="cardShoes">
-            <img src="pics/byxor3.png" alt="En bild på ett par ljusa jeans som har slitning vid låret och över höger knä" class="productImg">
-            <div class="container">
-                <h2>699:-</h2>
-              <p>Ripped Jeans</p> 
-            </div>
-              
-                <select class="sizePants"> 
-                  <option selected disabled>Välj storlek</option>
-                  <option>XL</option>
-                  <option>L</option>
-                  <option>M</option>
-                  <option>S</option>
-                </select>
-                <select class="colorPants">
-                  <option selected disabled>Välj färg</option>
-                  <option>Black</option>
-                  <option>Light Blue</option>
-                </select>
-                <div class="buyBtn">
-                  <button>&#128722;Lägg till i varukorg</button>
-                </div>
-             
-            </div>
+        </div>
+
+        <div class="cardShoes">
+          <img
+            src="pics/byxor2.png"
+            alt="En bild på ett par chinos med rutor"
+            class="productImg"
+          />
+          <div class="container">
+            <h2>799:-</h2>
+            <p>Chinos</p>
+
+            <select>
+              <option selected disabled>Välj storlek</option>
+              <option>XL</option>
+              <option>L</option>
+              <option>M</option>
+              <option>S</option>
+            </select>
+            <select>
+              <option selected disabled>Välj färg</option>
+              <option>Black</option>
+              <option>White</option>
+              <option>Grey</option>
+              <option>Navy Blue</option>
+            </select>
+            <button onclick="myFunction()">
+              &#128722;Lägg till i varukorg
+            </button>
+          </div>
+        </div>
+
+        <div class="cardShoes">
+          <img
+            src="pics/byxor3.png"
+            alt="En bild på ett par ljusa jeans som har slitning vid låret och över höger knä"
+            class="productImg"
+          />
+          <div class="container">
+            <h2>699:-</h2>
+            <p>Ripped Jeans</p>
+          </div>
+
+          <select>
+            <option selected disabled>Välj storlek</option>
+            <option>XL</option>
+            <option>L</option>
+            <option>M</option>
+            <option>S</option>
+          </select>
+          <select>
+            <option selected disabled>Välj färg</option>
+            <option>Black</option>
+            <option>Light Blue</option>
+          </select>
+
+          <button onclick="myFunction()">
+            &#128722;Lägg till i varukorg
+          </button>
+        </div>
       </div>
     </main>
 
-      <footer>
-          <div class="divFooter">
-              <img class="logoFooter" src="pics/logo.png" alt="">
-              <p>© E-STORE 2022</p>
-          </div>
+    <footer>
+      <div class="divFooter">
+        <img class="logoFooter" src="pics/store4.svg" alt="" />
+        <p>© E-STORE 2022</p>
+      </div>
 
-          <div class="linkFooter">
-              <ul class="linkFooter">
-                  <li><a class="footerlinks" href="index.html">Startsida</a></li>
-                  <li><a class="footerlinks" href="productsite.html">Produktsida</a></li>
-                  <li><a class="footerlinks" href="references.html">Referenser</a></li>
-                  <li><a class="footerlinks" href="about.html">Om oss</a></li>
-                  <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
-              </ul>
-          </div>
-
-
-  </footer>
-   </body>
-   </html>
+      <div class="linkFooter">
+        <ul class="linkFooter">
+          <li><a class="footerlinks" href="index.html">Startsida</a></li>
+          <li>
+            <a class="footerlinks" href="productsite.html">Produktsida</a>
+          </li>
+          <li><a class="footerlinks" href="references.html">Recensioner</a></li>
+          <li><a class="footerlinks" href="about.html">Om oss</a></li>
+          <li><a class="footerlinks" href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
