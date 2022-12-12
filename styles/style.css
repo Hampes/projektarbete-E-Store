@@ -12,7 +12,12 @@ html,
 body {
   font-family: "poppins", sans-serif;
   background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #d3d3d3 30%, #b1b1b1 60%);
+  background: -moz-linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #d3d3d3 30%,
+    #b1b1b1 60%
+  );
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -657,7 +662,7 @@ iframe {
     align-items: center;
   }
   .shoes select,
-.shoes button {
+  .shoes button {
     border: none;
     border-radius: 5px;
     height: 30px;
@@ -785,4 +790,4 @@ iframe {
   .welcome {
     font-size: 40px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

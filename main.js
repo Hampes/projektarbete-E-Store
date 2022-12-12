@@ -26,12 +26,10 @@ function showDivs(n) {
   }
 }
 
-
-let addProduct = document.querySelector(".addProduct")
+let addProduct = document.querySelector(".addProduct");
 // let buttonBuy = document.querySelector(".buttonBuy")
 
-
-let y = 1
+let y = 1;
 function myFunction() {
-  addProduct.textContent = y++
-};
+  addProduct.textContent = y++;
+}
