@@ -78,6 +78,7 @@ span {
   display: none;
   cursor: pointer;
   display: block;
+  z-index: 3;
 }
 #hamburger-icon div {
   width: 30px;
