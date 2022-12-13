@@ -1,12 +1,10 @@
-// MAIN PRODUCTSITE------------------
 
 .productWrap {
-  height: 100%;
-}
 
-.imgProduct {
-  border-radius: 100%;
-  width: 100%;
+  img {
+    border-radius: 100%;
+    width: 100%;
+  }
 }
 
 .productDiv {
@@ -33,10 +31,13 @@
 .shoes {
   @include flex(column, space-around, center);
   width: 100%;
+  font-family: $fontTwo;
 
   h2 {
-    margin-top: 30px;
+    font-size: $sizeCardMobile;
+    margin-top: 0;
     font-family: $fontOne;
+    
   }
 
   select,
@@ -61,10 +62,6 @@
   width: 200px;
   margin: 20px 0 20px 0;
 
-  h2 {
-    font-size: $sizeCardMobile;
-    margin-top: 0;
-  }
 
   img {
     width: 100%;
@@ -82,10 +79,14 @@
 
 @media (min-width: 800px) {
 
+  .productWrap {
+    @include flex(column, space-around, center);
 
-
-  .imgProduct {
-    width: 80%;
+    img {
+      
+        width: 80%;
+      
+    }
   }
 
   .productDiv {
@@ -94,9 +95,6 @@
     @include flex(row, space-between, center);
   }
 
-  .productWrap {
-    @include flex(column, space-around, center);
-  }
 
   .shoes {
     @include flex(row, center, center);
@@ -105,8 +103,8 @@
   button {
     border: none;
     border-radius: 5px;
-    height: 30px;
-    margin: 3px 0 3px 0;
+    height: $inputHeight;
+    margin-top: 10px;
     width: 180px;
   }
 

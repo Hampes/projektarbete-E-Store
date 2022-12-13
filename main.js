@@ -27,7 +27,6 @@ function showDivs(n) {
 }
 
 let addProduct = document.querySelector(".addProduct");
-// let buttonBuy = document.querySelector(".buttonBuy")
 
 let y = 1;
 function myFunction() {

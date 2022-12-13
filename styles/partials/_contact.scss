@@ -27,11 +27,12 @@
     padding: 3px 0 3px 10px;
     margin: 3px 0 3px 0;
     width: 230px;
+    height: $inputHeight;
   }
 
   .textarea {
     width: 230px;
-    height: 120px
+    height: 120px;
   }
 }
 .contactDiv {
@@ -42,6 +43,7 @@
     width: 230px;
     height: 230px;
     margin-bottom: 30px;
+    border-radius: 5px;
   }
 }
 
@@ -63,7 +65,7 @@ iframe {
     .contactImg {
       width: 250px;
       height: 250px;
-      margin-bottom: 0;
+      margin-bottom: 30px;
     }
   }
 

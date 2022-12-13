@@ -40,7 +40,9 @@ header {
 }
 
 
-
+span {
+  font-size: 15px;
+}
 
 .desktopBrand {
   display: none;
@@ -61,7 +63,6 @@ header {
 }
 
 .mobileBrand {
- 
 width: 50px;
 height: 50px;
 }
@@ -70,9 +71,7 @@ height: 50px;
   margin: auto 15px;
   display: none;
   cursor: pointer;
-}
-
-#hamburger-icon {
+  display: block;
   div {
     width: 30px;
     height: 2px;
@@ -128,7 +127,6 @@ ul {
   left: 0;
   height: 270px;
   width: 100%;
-  z-index: 3;
 }
 
 .mobile-menu li {
@@ -138,17 +136,11 @@ ul {
 header {
   nav {
     display: none;
+    a {
+      color: black;
+    }
   }
 }
-
-#hamburger-icon {
-  display: block;
-}
-
-h2 {
-  text-align: center;
-}
-
 @media (min-width: 800px) {
   header {
     height: 70px;
@@ -164,14 +156,11 @@ h2 {
   }
   .desktopBrand {
     display: block;
-    width: 55px;
   position: absolute;
-  left: 20px
-  }
-
-  .desktopLogo {
+  left: 20px;
+  img {
     width: 65px;
-
+  }
   }
 
 
